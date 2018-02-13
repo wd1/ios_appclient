@@ -1,0 +1,23 @@
+version: 2
+
+jobs:
+    build-and-test:
+        macos:
+            xcode: "9.1.0"
+        steps:
+            - checkout
+            - run:
+                name: Install with bundler
+                command: bundle install
+            - run:
+                name: Run tests
+                command: set -o pipefail && xcodebuild clean build test -workspace Toshi.xcworkspace -scheme "Tests" -destination 'platform=iOS Simulator,name=iPhone 7' | xcpretty --color && exit ${PIPESTATUS[0]}
+            - run:
+                name: Danger
+                command: bundle exec danger
+
+workflows:
+  version: 2
+  build-and-test:
+      jobs:
+          - build-and-test

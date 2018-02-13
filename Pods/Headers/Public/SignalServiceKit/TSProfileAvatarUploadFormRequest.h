@@ -1,0 +1,1 @@
+../../../SignalServiceKit/SignalServiceKit/src/Network/API/Requests/TSProfileAvatarUploadFormRequest.h

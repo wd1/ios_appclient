@@ -1,0 +1,24 @@
+{
+  "date": "1986-12-11",
+  "value": 96.55704099999988,
+  "offset": 0,
+  "query": "query=&apps=true&featured=true&top=false",
+  "limit": 10,
+  "results": [
+    {
+      "about": "It's all about tests",
+      "avatar": "https://token-id-service-development.herokuapp.com/avatar/0x8f9bdb7f562ccdedf3c24cf25e9cece9df62138b.png",
+      "average_rating": 4.5,
+      "is_app": 1,
+      "location": "Hamsterdam",
+      "name": "Moar Tests",
+      "payment_address": "0x011c6dd9565b8b83e6a9ee3f06e89ece3251ef2f",
+      "public": 1,
+      "reputation_score": 5.0,
+      "review_count": 2,
+      "token_id": "0x8f9bdb7f562ccdedf3c24cf25e9cece9df62138b",
+      "toshi_id": "0x8f9bdb7f562ccdedf3c24cf25e9cece9df62138b",
+      "username": "testUsername2"
+    }
+  ]
+}

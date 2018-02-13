@@ -1,0 +1,23 @@
+{
+  "name": "Marijntje",
+  "payment_address": "Longstreet 200",
+  "is_app": 0,
+  "reputation_score": 2.4,
+  "custom": [
+    {
+      "about": "test user dict!",
+      "avatar": "http://www.someURL.com",
+      "location": "Leiden",
+      "name": "Marijntje"
+    }
+  ],
+  "username": "marijn2000",
+  "review_count": 1,
+  "average_rating": 3.1,
+  "toshi_id": "van Diemenstraat 328",
+  "location": "Leiden",
+  "about": "test user dict!",
+  "avatar": "http://www.someURL.com",
+  "token_id": "van Diemenstraat 328",
+  "public": 1
+}

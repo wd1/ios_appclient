@@ -1,0 +1,27 @@
+{
+    "results":[
+        {
+               "name": "Marijn Schilling",
+               "payment_address": "0x1ad0bb2d14595fa6ad885e53eaaa6c82339f9b98",
+               "is_app": 0,
+               "reputation_score": 2.2,
+               "custom": [
+                          {
+                          "about": "Oh hai tests",
+                          "avatar": "https://token-id-service-development.herokuapp.com/avatar/0x6f70800cb47f7f84b6c71b3693fc02595eae7378.png",
+                          "location": "Amsterdam",
+                          "name": "Marijn Schilling"
+                          }
+                          ],
+               "username": "marijnschilling",
+               "review_count": 1,
+               "average_rating": 3,
+               "toshi_id": "0x6f70800cb47f7f84b6c71b3693fc02595eae7378",
+               "location": "Amsterdam",
+               "about": "Oh hai tests",
+               "avatar": "https://token-id-service-development.herokuapp.com/avatar/0x6f70800cb47f7f84b6c71b3693fc02595eae7378.png",
+               "token_id": "0x6f70800cb47f7f84b6c71b3693fc02595eae7378",
+               "public": 0
+        }
+    ]
+}

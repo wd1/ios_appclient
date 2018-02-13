@@ -1,0 +1,399 @@
+
+/* Welcome view */
+"welcome_title" = "Welcome to\nToshi";
+"welcome_subtitle" = "A browser for the Ethereum network that provides universal access to financial services";
+"sign_in_button_title" = "Sign in";
+"create_account_button_title" = "Create a new account";
+
+/* Push Notifications */
+"CONTACT_DETAIL_COMM_TYPE_INSECURE" = "Warning: Unregistered Number";
+"APN_Message" = "New message!";
+
+
+/* Browse */
+"browse-navigation-title" = "Search";
+"browse-search-placeholder" = "Search or type the url";
+
+"browse-top-rated-apps" = "Top Rated";
+"browse-featured-dapps" = "Featured";
+"browse-top-rated-public-users" = "Top Rated Public Users";
+"browse-latest-public-users" = "Latest Public Users";
+
+"browse-more-button" = "More";
+
+/* Messages */
+"messages_payment_approve" = "Approve";
+"messages_payment_decline" = "Decline";
+"messages_sent_error" = "Not delivered Tap to retry";
+"messages_sent_error_action_delete" = "Delete";
+"messages_sent_error_action_resend" = "Resend";
+
+"recent_messages_section_header_title" = "Messages";
+"messages_requests_title" = "Message Requests";
+"payment_request_message_preview_string" = "Payment request";
+"payment_message_preview_string" = "Payment";
+"attachment_message_preview_string" = "Attachment";
+
+/* Balance */
+"balance_navigation_title" = "Balance";
+"balance_action_send" = "Send";
+"balance_action_deposit" = "Deposit";
+
+/* Payment */
+"payment_request" = "Request Payment";
+"payment_send" = "New Payment";
+"payment_input_placeholder" = "Recipient Address";
+"payment_send_prefix" = "Send ";
+"payment_send_description" = "Enter the recipient’s ETH wallet address.";
+"payment_send_button" = "Send";
+"payment_next_button" = "Next";
+
+"qr_scanner_instructions" = "Scan QR Code";
+
+"payment_confirmation_warning_message" = "Do you want to send %@ (%@) to %@?";
+
+"payment_error_message" = "Error creating transaction";
+
+
+"payment_message_failure_title" = "Failed";
+"payment_message_success_title" = "Succeeded";
+"payment_message_success_message" = "Your Payment was successful.";
+"payment_message_button" = "Ok";
+
+"payment_request_confirmation_warning_title" = "Confirm payment";
+"payment_request_confirmation_warning_message" = "Do you want to accept the %@ (%@) request from %@?";
+"payment_request_confirmation_warning_message_fallback" = "Do you want accept the payment request from %@?";
+"payment_request_confirmation_warning_action_confirm" = "Pay";
+
+
+/* Passphrase */
+"passphrase_copy_navigation_title" = "Your passphrase";
+"passphrase_copy_text" = "Carefully write down the words. Don’t email it or screenshot it.";
+"passphrase_copy_action" = "Verify passphrase";
+"passphrase_copy_confirm_title" = "Copy to clipboard";
+"passphrase_copy_confirm_copied" = "Copied to clipboard";
+
+"passphrase_enable_navigation_title" = "Store passphrase";
+"passphrase_enable_title" = "Storing a passphrase will allow you to recover your funds if your phone is ever lost or stolen.";
+"passphrase_enable_text" = "It’s important to store this passphrase securely where nobody else can access it, such as on a piece of paper or in a password manager.";
+"passphrase_enable_checkbox" = "I understand that if I lose my passphrase, I will be unable to recover access to my account.";
+"passphrase_enable_action" = "Continue";
+
+"passphrase_verify_navigation_title" = "Verify passphrase";
+"passphrase_verify_text" = "Tap the words to put them next to each other in the correct order.";
+
+"passphrase_signin_error_title" = "Invalid passphrase";
+"passphrase_signin_error_verification" = "Are you sure you typed your passphrase correctly?";
+
+"sign_up_with_passphrase_alert_title" = "Create new Toshi account?";
+"sign_up_with_passphrase_alert_message" = "There is no Toshi account associated with this passphrase.\nWould you like to create one?";
+"sign_up_with_passphrase_accept_action_title" = "Create new account";
+
+"transaction_error_message" = "Error completing transaction";
+
+/* Settings */
+"settings_navigation_title" = "Me";
+
+"settings_header_profile" = "Profile";
+"settings_header_balance" = "Balance";
+"settings_header_security" = "Security";
+"settings_header_security_text" = "Your account is at risk";
+"settings_header_settings" = "Settings";
+
+"settings_cell_qr" = "My QR Code";
+"settings_cell_passphrase" = "Store passphrase";
+"settings_cell_advanced" = "Advanced";
+"settings_cell_signout" = "Sign out";
+
+"settings_signout_error_title" = "No user found!";
+"settings_signout_error_message" = "This is an error. Please report this.";
+
+"settings_signout_insecure_title" = "Have you secured your passphrase?";
+"settings_signout_insecure_message" = "Without this you will not be able to recover your account or sign back in.";
+
+"settings_signout_nofunds_title" = "Are you sure you want to sign out?";
+"settings_signout_nofunds_message" = "Since you have no funds and did not secure your account, it will be deleted.";
+
+"settings_signout_stepsneeded_title" = "Sign out cancelled";
+"settings_signout_stepsneeded_message" = "You need to complete at least one of the security steps to sign out.";
+
+"settings_signout_action_ok" = "Ok";
+"settings_signout_action_delete" = "Delete";
+"settings_signout_action_signout" = "Sign out";
+
+"settings_deposit_error_title" = "Your account is at Risk";
+"settings_deposit_error_message" = "You haven’t backed up your passphrase yet. Without it you risk losing money.";
+"settings_deposit_error_action_backup" = "Backup";
+
+"settings_advanced_network_change_warning" = "Changing the network allows you to test services without the risk of losing money. It’s recommended not to change these settings unless you are a developer\n\n";
+"active_network_format" = "Active network: %@";
+
+"settings_network_title" = "Network";
+
+/* Edit profile */
+
+"edit_profile_title" = "Edit profile";
+"edit_profile_change_photo" = "Change profile photo";
+
+"edit_profile_visibility_section_title" = "Profile visibility";
+"edit_profile_visibility_section_explanation" = "Setting your profile to public will allow it to show up on the Browse page. Other users will be able to message you from there.";
+
+"edit_profile_username_label" = "Username";
+"edit_profile_display_name_label" = "Display name";
+"edit_profile_about_label" = "About";
+"edit_profile_location_label" = "Location";
+"edit_profile_public_label" = "Public";
+
+/* Profile actions */
+"profile_action_message" = "Message";
+"profile_action_add_favorite" = "Favorite";
+"profile_action_pay" = "Pay";
+
+/* Rate */
+"rating_starter_placeholder" = " Review (optional)";
+"rate_user_title_format" = "Rate %@";
+"rate_user_message_format" = "How would you rate %@?";
+
+/* Image Picker related */
+
+"image-picker-select-source-title" = "Select source";
+"image-picker-camera-action-title" = "Camera";
+"image-picker-library-action-title" = "Library";
+
+/* Profile QR Code */
+
+"profile_qr_code_title" = "My QR Code";
+"profile_qr_code_subtitle" = "Use this QR code to let others add you on Toshi.";
+
+/* Deposit Money */
+
+"deposit_money_title" = "Deposit Money";
+"deposit_money_header_text" = "You can add money to your account in a variety of ways.";
+"deposit_money_1_title" = "1. Send ETH from another wallet";
+"deposit_money_1_text" = "Send to this address to top up your wallet:\n\n%@";
+"deposit_money_2_title" = "2. Find a local exchanger";
+"deposit_money_2_text" = "Find a local exchanger of Ethereum in your country. You can give them cash and they will send you Ethereum.";
+"deposit_money_3_title" = "3. Earn money";
+"deposit_money_3_text" = "Install an app that lets you earn Ethereum.";
+"deposit_money_4_title" = "4. Request money from a friend";
+"deposit_money_4_text" = "Send a payment request to a friend on Toshi.";
+"copy_to_clipboard_action" = "Copy to clipboard";
+"copy_to_clipboard_feedback" = "Copied";
+
+/* Currency Picker */
+"currency_picker_title" = "Local Currency";
+"currency_picker_header_suggested" = "Suggested";
+"currency_picker_header_other" = "Other";
+
+"error-alert-title" = "Error";
+"invalid-username-alert-message" = "Username is invalid! Use numbers, letters, and underscores only.";
+
+"ropsten-test-network-title" = "Ropsten Test Network";
+"toshi-test-network-title" = "Toshi Test Network";
+"mainnet-title" = "Mainnet";
+
+/* Generic Alerts */
+"network-alert-title" = "Be aware!";
+"network-alert-text" = "Toshi is not an appropriate wallet for storage of large sums of ETH.";
+"alert-ok-action-title" = "OK";
+"sign-out-failure-title" = "Could not sign out";
+"sign-out-failure-message" = "Error attempting to unregister from chat service. Our engineers are looking into it.";
+"cancel_action_title" = "Cancel";
+"copy_action_title" = "Copy";
+"not_now_action_title" = "Not now";
+"submit_action_title" = "Submit";
+"continue_action_title" = "Continue";
+"share_action_title" = "Share";
+"clipboard_copied_alert_text" = "Copied to clipboard!";
+
+/* Block user Alerts */
+"block_action_title" = "Block";
+
+"block_alert_title" = "Block username";
+"block_alert_message" = "They won’t be able to find your profile, or message you on Toshi. Users won’t know that you’ve blocked them.";
+
+"block_feedback_alert_title" = "Username blocked";
+"block_feedback_alert_message" = "You can unblock them at any time from their profile";
+
+"unblock_action_title" = "Unblock";
+"unblock_user_title" = "Username unblocked";
+"unblock_user_message" = "You can block them at any time from their profile";
+
+/* Report user Alerts */
+"report_action_title" = "Report";
+
+"report_feedback_alert_title" = "Thanks";
+"report_feedback_alert_message" = "Your feedback is important in helping us keep the Token community safe.";
+
+/* Accept Terms Alert */
+"accept_terms_title" = "Accept Terms";
+"accept_terms_text" = "By creating an account, you agree to the Toshi Terms of Service and Privacy Policy.";
+"accept_terms_action_read" = "Read Terms";
+"accept_terms_action_agree" = "Agree";
+
+"offline_alert_message" = "You are not connected to the internet";
+
+/* Favorites */
+"favorites_add_title" = "Add to favorites on Toshi";
+"favorites_add_by_username" = "Add by username";
+"invite_friends_action_title" = "Invite friends";
+"favorites_scan_code" = "Scan code";
+
+/* Empty Views */
+"favorites_empty_title" = "No favorites yet";
+"favorites_empty_description" = "Your favorites will be listed here. You can invite friends to join Token.";
+
+"chats_empty_title" = "No chats yet";
+"chats_empty_description" = "Once you start a new conversation, you'll see it here.";
+"chat_input_empty_placeholder" = "Message...";
+
+/* Passphrase Sign In */
+"passphrase_sign_in_title" = "Sign in with your Passphrase";
+"passphrase_sign_in_button" = "Sign in";
+"passphrase_sign_in_explanation_title" = "How does it work?";
+"passphrase_sign_in_placeholder" = "Enter your Passphrase...";
+"passphrase_sign_in_explanation_title" = "How does it work?";
+"passphrase_sign_in_explanation_text" = "To sign in to Toshi you need to enter the Passphrase that has been given to you when you secured your account. The Passphrase consists out of 12 words and is used to secure and identify your account.\n\nYour account is stored anonymously on the Ethereum blockchain, this means we don't have access to your data. The 12-word Passphrase is the only way to Sign in to your account. If you lost the Passphrase or have not properly finished the setup there is no way to recover your account. ";
+
+/* Text Editing Options */
+"text_editing_options_paste" = "Paste";
+
+/* Profiles */
+"profiles_navigation_title_favorites" = "Favorites";
+"profiles_navigation_title_new_chat" = "New Chat";
+"profiles_navigation_title_new_group_chat" = "New Group Chat";
+"profiles_navigation_title_update_group_chat" = "Update group";
+"profiles_add_to_group_prefix" = "To: ";
+"profiles_empty_group_placeholder" = "No recipients yet";
+"profiles_search_bar_title" = "Search by username";
+
+/* Tab Bar */
+"tab_bar_title_browse" = "Search";
+"tab_bar_title_recent" = "Recent";
+"tab_bar_title_wallet" = "Wallet";
+"tab_bar_title_favorites" = "Favorites";
+"tab_bar_title_settings" = "Settings";
+
+/* Wallet */
+"wallet_controller_title" = "My Wallet";
+"wallet_address_title" = "Wallet Address";
+"wallet_address_subtitle" = "Receive Ethereum and tokens to your personal public address.";
+"wallet_tokens" = "Tokens";
+"wallet_collectibles" = "Collectibles";
+
+"wallet_empty_tokens_title" = "No Tokens Yet";
+"wallet_empty_collectibles_title" = "No Collectibles Yet";
+"wallet_empty_tokens_description" = "Share your wallet address to\nreceive money and tokens.";
+"wallet_empty_tokens_button_title" = "Share Wallet Address";
+
+/* Nav Bar Buttons */
+"nav_bar_back" = "Back";
+
+/* Keychain and file system error */
+"yap_missing_password_error_description" = "No keychain password while database present";
+"yap_missing_db_file_error_description" = "No database file while keychain password present";
+
+
+/* Toshi error messages*/
+"toshi_error_invalid_payload" = "Invalid payload, request could not be executed";
+"toshi_error_invalid_response_json" = "We received invalid json from the server";
+"toshi_error_data_task_error" = "Data task error, request could not be completed";
+"toshi_generic_error" = "Something went wrong";
+
+"transaction_skeleton_error_description" = "Unable to estimate Ethereum network fees";
+
+"error_title" = "Error";
+
+/* Group chat */
+"new_group_title" = "New Group";
+"group_info_title" = "Group Info";
+"create_group_button_title" = "Create";
+"update_group_button_title" = "Update";
+"new_group_settings_header_title" = "Group settings";
+"new_group_add_participants_action_title" = "Add Participants";
+"new_group_public_settings_title" = "Public";
+"new_group_notifications_settings_title" = "Notifications";
+
+"group_info_leave_group_title" = "Leave Group";
+"group_info_leave_confirmation_message" = "Do you want to leave this group?";
+"group_info_leave_action_title" = "Leave";
+"group_info_leave_group_failure_message" = "Failed to leave the group.\nPlease try again.";
+"profiles_new_group" = "New Group";
+"accept_button_title" = "Accept";
+"decline_button_title" = "Decline";
+
+/* Chat */
+"chat_request_payment_button_title" = "Request";
+"chat_pay_button_title" = "Pay";
+"chat_payment_request_action" = "Payment request";
+"chat_payment_recieved" = "Payment received";
+"chat_payment_sent" = "Payment sent";
+
+/* Signing */
+"sign_action_title" = "Sign";
+"sign_alert_title" = "This webpage is requesting your signature";
+"eth_sign_warning" = "Warning: Only sign messages from sites you fully trust as signing messages can have dangerous side effects.";
+
+/* Status messages */
+"status_type_create" = "Group created.";
+"status_type_became_member" = "You were added to %@.";
+"status_type_leave" = "%@ left the group.";
+"status_type_added" = "%@ added %@ to the group.";
+"status_type_change_photo" = "%@ changed the group cover photo.";
+"status_type_rename" = "%@ renamed the group to %@.";
+"status_type_make_public" = "%@ set the group as public.";
+"status_type_make_private" = "%@ set the group as private.";
+
+"current_user_pronoun" = "You";
+
+/* Sharing */
+"sharing_action_item" = "Get Toshi, available for iOS and Android! (https://www.toshi.org)";
+
+/* Dapps */
+"dapp_button_enter" = "Open";
+
+/* Profile */
+"profile_title" = "Profile";
+"profile_me_title" = "Me";
+"profile_message_button_title" = "Message";
+"profile_pay_button_title" = "Pay";
+"profile_edit_button_title" = "Edit Profile";
+"profile_reputation_section_header" = "REPUTATION";
+"profile_rate_user" = "Rate User";
+"profile_rate_bot" = "Rate Bot";
+"profile_favorite_action" = "Save to Favorites";
+"profile_unfavorite_action" = "Remove from Favorites";
+
+/* Accessibility */
+"accessibility_more" = "More";
+"accessibility_close" = "Close";
+
+/* Payment Confirmation */
+"confirmation_title" = "Confirm Payment";
+"confirmation_recipient" = "Recipient";
+"confirmation_dapp" = "Dapp";
+"confirmation_amount" = "Amount";
+"confirmation_estimated_network_fees" = "Est. Network Fees";
+"confirmation_total" = "Total";
+"confirmation_pay" = "Pay";
+"confirmation_fetching_estimated_network_fees" = "Fetching est. network fees...";
+"confirmation_fetching_balance" = "Fetching balance...";
+"confirmation_your_balance" = "Your balance: %@";
+"confirmation_insufficient_balance" = "Insufficient balance: %@";
+"confirmation_error_balance" = "Error fetching balance";
+"confirmation_error_transaction" = "Error fetching payment info";
+"confirmation_error_payment" = "Error making payment";
+
+/* Notifications */
+"notification_payment_title" = "Payment";
+"notification_payment_received_message_format" = "Payment received: %@";
+"notification_payment_sent_message_format" = "Payment sent: %@";
+"notification_payment_received_in_background_title" = "Payment Received!";
+"notification_payment_received_in_background_message_format" = "You've received %@.";
+
+/* Share */
+"share_copy" = "Get Toshi, available for iOS and Android! (https://toshi.org)";
+
+/* Input Fields */
+"input_field_username_placeholder" = "Username";
+"input_field_password_placeholder" = "Password";

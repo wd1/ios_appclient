@@ -1,0 +1,21 @@
+{
+    "tokens": [
+               {
+               "symbol": "ABC",
+               "name": "Alphabet Token",
+               "value": "0x1234567890abcdef",
+               "decimals": 18,
+               "contract_address": "0x0123456789012345678901234567890123456789",
+               "icon": "https://ethereum.service.toshi.org/token/ABC.png"
+               },
+               {
+               "symbol": "ABC2",
+               "name": "Alphabet Token 2",
+               "value": "0x1234567890abcdef",
+               "decimals": 30,
+               "contract_address": "0x0123456789012345678901254567890123456789",
+               "icon": "https://ethereum.service.toshi.org/token/ABC.png"
+               }
+               ]
+}
+

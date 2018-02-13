@@ -1,0 +1,11 @@
+framework module EtherealCereal {
+  umbrella header "EtherealCereal.h"
+
+  export *
+  module * { export * }
+}
+
+module EtherealCereal.Swift {
+    header "EtherealCereal-Swift.h"
+    requires objc
+}

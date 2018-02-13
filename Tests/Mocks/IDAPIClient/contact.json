@@ -1,0 +1,23 @@
+{
+  "name": "Ellen Shapiro",
+  "payment_address": "123 Fake Street",
+  "is_app": 0,
+  "reputation_score": 2.1,
+  "custom": [
+    {
+      "about": "Moar Tests Always",
+      "avatar": "https://frinkiac.com/meme/S08E14/661860.jpg?b64lines=V0hFTiBJVENIWSBQTEFZUyBTQ1JBVENIWSdTIApTS0VMRVRPTiBMSUtFIEEgWFlMT1BIT05FIAoKCgoKCgoKSEUgU1RSSUtFUyBUSEUgU0FNRSBSSUIgVFdJQ0UKSU4gU1VDQ0VTU0lPTiwgWUVUIEhFIFBST0RVQ0VTIApUV08gQ0xFQVJMWSBESUZGRVJFTlQgVE9ORVMu",
+      "location": "Nijmegen",
+      "name": "Ellen Shapiro"
+    }
+  ],
+  "username": "designatednerd",
+  "review_count": 1,
+  "average_rating": 4.1,
+  "toshi_id": "Some ungodly long hex thing",
+  "location": "Nijmegen",
+  "about": "Moar Tests Always",
+  "avatar": "https://frinkiac.com/meme/S08E14/661860.jpg?b64lines=V0hFTiBJVENIWSBQTEFZUyBTQ1JBVENIWSdTIApTS0VMRVRPTiBMSUtFIEEgWFlMT1BIT05FIAoKCgoKCgoKSEUgU1RSSUtFUyBUSEUgU0FNRSBSSUIgVFdJQ0UKSU4gU1VDQ0VTU0lPTiwgWUVUIEhFIFBST0RVQ0VTIApUV08gQ0xFQVJMWSBESUZGRVJFTlQgVE9ORVMu",
+  "token_id": "Some ungodly long hex thing",
+  "public": 1
+}

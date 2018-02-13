@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "name": "Cryptokitties",
+      "url": "https://www.cryptokitties.co/",
+      "avatar": "cryptokitties.png",
+      "description": "CryptoKitties is a game centered around breedable, collectible, and oh-so-adorable creatures we call CryptoKitties! Each cat is one-of-a-kind and 100% owned by you; it cannot be replicated, taken away, or destroyed."
+    },{
+      "name": "NameBazaar",
+      "url": "https://namebazaar.io/",
+      "avatar": "name_bazaar.png",
+      "description": "A peer-to-peer marketplace for the exchange of names registered via the Ethereum Name Service."
+    },{
+      "name": "Cent",
+      "url": "https://beta.cent.co/",
+      "avatar": "cent.png",
+      "description": "Give wisdom, get money. Ask a question and offer a bounty for the best answers. The userbase then votes to determine which answers receive that bounty."
+    },{
+      "name": "0x Portal",
+      "url": "https://0xproject.com/portal",
+      "avatar": "0x.png",
+      "description": "Powering decentralized exchange - 0x is an open, permissionless protocol allowing for ERC20 tokens to be traded on the Ethereum blockchain."
+    }
+  ]
+}

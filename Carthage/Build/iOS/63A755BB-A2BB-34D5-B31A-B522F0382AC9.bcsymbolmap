@@ -1,0 +1,2512 @@
+BCSymbolMap Version: 2.0
++[YYTextLine lineWithCTLine:position:vertical:]
+-[YYTextLine dealloc]
+-[YYTextLine setCTLine:]
+-[YYTextLine setPosition:]
+-[YYTextLine reloadBounds]
+-[YYTextLine size]
+-[YYTextLine width]
+-[YYTextLine height]
+-[YYTextLine top]
+-[YYTextLine bottom]
+-[YYTextLine left]
+-[YYTextLine right]
+-[YYTextLine description]
+-[YYTextLine index]
+-[YYTextLine setIndex:]
+-[YYTextLine row]
+-[YYTextLine setRow:]
+-[YYTextLine verticalRotateRange]
+-[YYTextLine setVerticalRotateRange:]
+-[YYTextLine CTLine]
+-[YYTextLine range]
+-[YYTextLine vertical]
+-[YYTextLine bounds]
+-[YYTextLine position]
+-[YYTextLine ascent]
+-[YYTextLine descent]
+-[YYTextLine leading]
+-[YYTextLine lineWidth]
+-[YYTextLine trailingWhitespaceWidth]
+-[YYTextLine attachments]
+-[YYTextLine attachmentRanges]
+-[YYTextLine attachmentRects]
+-[YYTextLine .cxx_destruct]
++[YYTextRunGlyphRange rangeWithRange:drawMode:]
+-[YYTextRunGlyphRange glyphRangeInRun]
+-[YYTextRunGlyphRange setGlyphRangeInRun:]
+-[YYTextRunGlyphRange drawMode]
+-[YYTextRunGlyphRange setDrawMode:]
+_OBJC_IVAR_$_YYTextLine._position
+_OBJC_IVAR_$_YYTextLine._vertical
+_OBJC_IVAR_$_YYTextLine._CTLine
+_OBJC_IVAR_$_YYTextLine._ascent
+_OBJC_IVAR_$_YYTextLine._descent
+_OBJC_IVAR_$_YYTextLine._leading
+_OBJC_IVAR_$_YYTextLine._lineWidth
+_OBJC_IVAR_$_YYTextLine._range
+_OBJC_IVAR_$_YYTextLine._firstGlyphPos
+_OBJC_IVAR_$_YYTextLine._trailingWhitespaceWidth
+_OBJC_IVAR_$_YYTextLine._bounds
+_OBJC_IVAR_$_YYTextLine._attachments
+_OBJC_IVAR_$_YYTextLine._attachmentRanges
+_OBJC_IVAR_$_YYTextLine._attachmentRects
+_OBJC_IVAR_$_YYTextLine._index
+_OBJC_IVAR_$_YYTextLine._row
+_OBJC_IVAR_$_YYTextLine._verticalRotateRange
+_OBJC_IVAR_$_YYTextRunGlyphRange._glyphRangeInRun
+_OBJC_IVAR_$_YYTextRunGlyphRange._drawMode
+Apple LLVM version 8.1.0 (clang-802.0.42)
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Component/YYTextLine.m
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/Framework
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Component/YYTextLine.h
+-[YYTextRunDelegate CTRunDelegate]
+_DeallocCallback
+_GetAscentCallback
+_GetDecentCallback
+_GetWidthCallback
+-[YYTextRunDelegate encodeWithCoder:]
+-[YYTextRunDelegate initWithCoder:]
+-[YYTextRunDelegate copyWithZone:]
+-[YYTextRunDelegate userInfo]
+-[YYTextRunDelegate setUserInfo:]
+-[YYTextRunDelegate ascent]
+-[YYTextRunDelegate setAscent:]
+-[YYTextRunDelegate descent]
+-[YYTextRunDelegate setDescent:]
+-[YYTextRunDelegate width]
+-[YYTextRunDelegate setWidth:]
+-[YYTextRunDelegate .cxx_destruct]
+_OBJC_IVAR_$_YYTextRunDelegate._ascent
+_OBJC_IVAR_$_YYTextRunDelegate._descent
+_OBJC_IVAR_$_YYTextRunDelegate._width
+_OBJC_IVAR_$_YYTextRunDelegate._userInfo
+l_OBJC_PROTOCOL_$_NSCopying
+l_OBJC_LABEL_PROTOCOL_$_NSCopying
+l_OBJC_PROTOCOL_$_NSCoding
+l_OBJC_LABEL_PROTOCOL_$_NSCoding
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/String/YYTextRunDelegate.m
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/String/YYTextRunDelegate.h
+GetWidthCallback
+GetDecentCallback
+GetAscentCallback
+DeallocCallback
+-[NSAttributedString(YYText) yy_archiveToData]
++[NSAttributedString(YYText) yy_unarchiveFromData:]
+-[NSAttributedString(YYText) yy_attributesAtIndex:]
+-[NSAttributedString(YYText) yy_attribute:atIndex:]
+-[NSAttributedString(YYText) yy_attributes]
+-[NSAttributedString(YYText) yy_font]
+-[NSAttributedString(YYText) yy_fontAtIndex:]
+-[NSAttributedString(YYText) yy_kern]
+-[NSAttributedString(YYText) yy_kernAtIndex:]
+-[NSAttributedString(YYText) yy_color]
+-[NSAttributedString(YYText) yy_colorAtIndex:]
+-[NSAttributedString(YYText) yy_backgroundColor]
+-[NSAttributedString(YYText) yy_backgroundColorAtIndex:]
+-[NSAttributedString(YYText) yy_strokeWidth]
+-[NSAttributedString(YYText) yy_strokeWidthAtIndex:]
+-[NSAttributedString(YYText) yy_strokeColor]
+-[NSAttributedString(YYText) yy_strokeColorAtIndex:]
+-[NSAttributedString(YYText) yy_shadow]
+-[NSAttributedString(YYText) yy_shadowAtIndex:]
+-[NSAttributedString(YYText) yy_strikethroughStyle]
+-[NSAttributedString(YYText) yy_strikethroughStyleAtIndex:]
+-[NSAttributedString(YYText) yy_strikethroughColor]
+-[NSAttributedString(YYText) yy_strikethroughColorAtIndex:]
+-[NSAttributedString(YYText) yy_underlineStyle]
+-[NSAttributedString(YYText) yy_underlineStyleAtIndex:]
+-[NSAttributedString(YYText) yy_underlineColor]
+-[NSAttributedString(YYText) yy_underlineColorAtIndex:]
+-[NSAttributedString(YYText) yy_ligature]
+-[NSAttributedString(YYText) yy_ligatureAtIndex:]
+-[NSAttributedString(YYText) yy_textEffect]
+-[NSAttributedString(YYText) yy_textEffectAtIndex:]
+-[NSAttributedString(YYText) yy_obliqueness]
+-[NSAttributedString(YYText) yy_obliquenessAtIndex:]
+-[NSAttributedString(YYText) yy_expansion]
+-[NSAttributedString(YYText) yy_expansionAtIndex:]
+-[NSAttributedString(YYText) yy_baselineOffset]
+-[NSAttributedString(YYText) yy_baselineOffsetAtIndex:]
+-[NSAttributedString(YYText) yy_verticalGlyphForm]
+-[NSAttributedString(YYText) yy_verticalGlyphFormAtIndex:]
+-[NSAttributedString(YYText) yy_language]
+-[NSAttributedString(YYText) yy_languageAtIndex:]
+-[NSAttributedString(YYText) yy_writingDirection]
+-[NSAttributedString(YYText) yy_writingDirectionAtIndex:]
+-[NSAttributedString(YYText) yy_paragraphStyle]
+-[NSAttributedString(YYText) yy_paragraphStyleAtIndex:]
+-[NSAttributedString(YYText) yy_alignment]
+-[NSAttributedString(YYText) yy_lineBreakMode]
+-[NSAttributedString(YYText) yy_lineSpacing]
+-[NSAttributedString(YYText) yy_paragraphSpacing]
+-[NSAttributedString(YYText) yy_paragraphSpacingBefore]
+-[NSAttributedString(YYText) yy_firstLineHeadIndent]
+-[NSAttributedString(YYText) yy_headIndent]
+-[NSAttributedString(YYText) yy_tailIndent]
+-[NSAttributedString(YYText) yy_minimumLineHeight]
+-[NSAttributedString(YYText) yy_maximumLineHeight]
+-[NSAttributedString(YYText) yy_lineHeightMultiple]
+-[NSAttributedString(YYText) yy_baseWritingDirection]
+-[NSAttributedString(YYText) yy_hyphenationFactor]
+-[NSAttributedString(YYText) yy_defaultTabInterval]
+-[NSAttributedString(YYText) yy_tabStops]
+-[NSAttributedString(YYText) yy_alignmentAtIndex:]
+-[NSAttributedString(YYText) yy_lineBreakModeAtIndex:]
+-[NSAttributedString(YYText) yy_lineSpacingAtIndex:]
+-[NSAttributedString(YYText) yy_paragraphSpacingAtIndex:]
+-[NSAttributedString(YYText) yy_paragraphSpacingBeforeAtIndex:]
+-[NSAttributedString(YYText) yy_firstLineHeadIndentAtIndex:]
+-[NSAttributedString(YYText) yy_headIndentAtIndex:]
+-[NSAttributedString(YYText) yy_tailIndentAtIndex:]
+-[NSAttributedString(YYText) yy_minimumLineHeightAtIndex:]
+-[NSAttributedString(YYText) yy_maximumLineHeightAtIndex:]
+-[NSAttributedString(YYText) yy_lineHeightMultipleAtIndex:]
+-[NSAttributedString(YYText) yy_baseWritingDirectionAtIndex:]
+-[NSAttributedString(YYText) yy_hyphenationFactorAtIndex:]
+-[NSAttributedString(YYText) yy_defaultTabIntervalAtIndex:]
+-[NSAttributedString(YYText) yy_tabStopsAtIndex:]
+-[NSAttributedString(YYText) yy_textShadow]
+-[NSAttributedString(YYText) yy_textShadowAtIndex:]
+-[NSAttributedString(YYText) yy_textInnerShadow]
+-[NSAttributedString(YYText) yy_textInnerShadowAtIndex:]
+-[NSAttributedString(YYText) yy_textUnderline]
+-[NSAttributedString(YYText) yy_textUnderlineAtIndex:]
+-[NSAttributedString(YYText) yy_textStrikethrough]
+-[NSAttributedString(YYText) yy_textStrikethroughAtIndex:]
+-[NSAttributedString(YYText) yy_textBorder]
+-[NSAttributedString(YYText) yy_textBorderAtIndex:]
+-[NSAttributedString(YYText) yy_textBackgroundBorder]
+-[NSAttributedString(YYText) yy_textBackgroundBorderAtIndex:]
+-[NSAttributedString(YYText) yy_textGlyphTransform]
+-[NSAttributedString(YYText) yy_textGlyphTransformAtIndex:]
+-[NSAttributedString(YYText) yy_plainTextForRange:]
+___51-[NSAttributedString(YYText) yy_plainTextForRange:]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
++[NSAttributedString(YYText) yy_attachmentStringWithContent:contentMode:width:ascent:descent:]
++[NSAttributedString(YYText) yy_attachmentStringWithContent:contentMode:attachmentSize:alignToFont:alignment:]
++[NSAttributedString(YYText) yy_attachmentStringWithEmojiImage:fontSize:]
+-[NSAttributedString(YYText) yy_rangeOfAll]
+-[NSAttributedString(YYText) yy_isSharedAttributesInAllRange]
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___61-[NSAttributedString(YYText) yy_isSharedAttributesInAllRange]_block_invoke
+___copy_helper_block_.191
+___destroy_helper_block_.192
+-[NSAttributedString(YYText) yy_canDrawWithUIKit]
+___49-[NSAttributedString(YYText) yy_canDrawWithUIKit]_block_invoke
+___49-[NSAttributedString(YYText) yy_canDrawWithUIKit]_block_invoke_2
+___copy_helper_block_.210
+___destroy_helper_block_.211
+-[NSMutableAttributedString(YYText) yy_setAttributes:]
+-[NSMutableAttributedString(YYText) setYy_attributes:]
+___54-[NSMutableAttributedString(YYText) setYy_attributes:]_block_invoke
+___copy_helper_block_.368
+___destroy_helper_block_.369
+-[NSMutableAttributedString(YYText) yy_setAttribute:value:]
+-[NSMutableAttributedString(YYText) yy_setAttribute:value:range:]
+-[NSMutableAttributedString(YYText) yy_removeAttributesInRange:]
+-[NSMutableAttributedString(YYText) setYy_font:]
+-[NSMutableAttributedString(YYText) setYy_kern:]
+-[NSMutableAttributedString(YYText) setYy_color:]
+-[NSMutableAttributedString(YYText) setYy_backgroundColor:]
+-[NSMutableAttributedString(YYText) setYy_strokeWidth:]
+-[NSMutableAttributedString(YYText) setYy_strokeColor:]
+-[NSMutableAttributedString(YYText) setYy_shadow:]
+-[NSMutableAttributedString(YYText) setYy_strikethroughStyle:]
+-[NSMutableAttributedString(YYText) setYy_strikethroughColor:]
+-[NSMutableAttributedString(YYText) setYy_underlineStyle:]
+-[NSMutableAttributedString(YYText) setYy_underlineColor:]
+-[NSMutableAttributedString(YYText) setYy_ligature:]
+-[NSMutableAttributedString(YYText) setYy_textEffect:]
+-[NSMutableAttributedString(YYText) setYy_obliqueness:]
+-[NSMutableAttributedString(YYText) setYy_expansion:]
+-[NSMutableAttributedString(YYText) setYy_baselineOffset:]
+-[NSMutableAttributedString(YYText) setYy_verticalGlyphForm:]
+-[NSMutableAttributedString(YYText) setYy_language:]
+-[NSMutableAttributedString(YYText) setYy_writingDirection:]
+-[NSMutableAttributedString(YYText) setYy_paragraphStyle:]
+-[NSMutableAttributedString(YYText) setYy_alignment:]
+-[NSMutableAttributedString(YYText) setYy_baseWritingDirection:]
+-[NSMutableAttributedString(YYText) setYy_lineSpacing:]
+-[NSMutableAttributedString(YYText) setYy_paragraphSpacing:]
+-[NSMutableAttributedString(YYText) setYy_paragraphSpacingBefore:]
+-[NSMutableAttributedString(YYText) setYy_firstLineHeadIndent:]
+-[NSMutableAttributedString(YYText) setYy_headIndent:]
+-[NSMutableAttributedString(YYText) setYy_tailIndent:]
+-[NSMutableAttributedString(YYText) setYy_lineBreakMode:]
+-[NSMutableAttributedString(YYText) setYy_minimumLineHeight:]
+-[NSMutableAttributedString(YYText) setYy_maximumLineHeight:]
+-[NSMutableAttributedString(YYText) setYy_lineHeightMultiple:]
+-[NSMutableAttributedString(YYText) setYy_hyphenationFactor:]
+-[NSMutableAttributedString(YYText) setYy_defaultTabInterval:]
+-[NSMutableAttributedString(YYText) setYy_tabStops:]
+-[NSMutableAttributedString(YYText) setYy_textShadow:]
+-[NSMutableAttributedString(YYText) setYy_textInnerShadow:]
+-[NSMutableAttributedString(YYText) setYy_textUnderline:]
+-[NSMutableAttributedString(YYText) setYy_textStrikethrough:]
+-[NSMutableAttributedString(YYText) setYy_textBorder:]
+-[NSMutableAttributedString(YYText) setYy_textBackgroundBorder:]
+-[NSMutableAttributedString(YYText) setYy_textGlyphTransform:]
+-[NSMutableAttributedString(YYText) yy_setFont:range:]
+-[NSMutableAttributedString(YYText) yy_setKern:range:]
+-[NSMutableAttributedString(YYText) yy_setColor:range:]
+-[NSMutableAttributedString(YYText) yy_setBackgroundColor:range:]
+-[NSMutableAttributedString(YYText) yy_setStrokeWidth:range:]
+-[NSMutableAttributedString(YYText) yy_setStrokeColor:range:]
+-[NSMutableAttributedString(YYText) yy_setShadow:range:]
+-[NSMutableAttributedString(YYText) yy_setStrikethroughStyle:range:]
+-[NSMutableAttributedString(YYText) yy_setStrikethroughColor:range:]
+-[NSMutableAttributedString(YYText) yy_setUnderlineStyle:range:]
+-[NSMutableAttributedString(YYText) yy_setUnderlineColor:range:]
+-[NSMutableAttributedString(YYText) yy_setLigature:range:]
+-[NSMutableAttributedString(YYText) yy_setTextEffect:range:]
+-[NSMutableAttributedString(YYText) yy_setObliqueness:range:]
+-[NSMutableAttributedString(YYText) yy_setExpansion:range:]
+-[NSMutableAttributedString(YYText) yy_setBaselineOffset:range:]
+-[NSMutableAttributedString(YYText) yy_setVerticalGlyphForm:range:]
+-[NSMutableAttributedString(YYText) yy_setLanguage:range:]
+-[NSMutableAttributedString(YYText) yy_setWritingDirection:range:]
+-[NSMutableAttributedString(YYText) yy_setParagraphStyle:range:]
+-[NSMutableAttributedString(YYText) yy_setAlignment:range:]
+___59-[NSMutableAttributedString(YYText) yy_setAlignment:range:]_block_invoke
+___copy_helper_block_.476
+___destroy_helper_block_.477
+-[NSMutableAttributedString(YYText) yy_setBaseWritingDirection:range:]
+___70-[NSMutableAttributedString(YYText) yy_setBaseWritingDirection:range:]_block_invoke
+___copy_helper_block_.482
+___destroy_helper_block_.483
+-[NSMutableAttributedString(YYText) yy_setLineSpacing:range:]
+___61-[NSMutableAttributedString(YYText) yy_setLineSpacing:range:]_block_invoke
+___copy_helper_block_.487
+___destroy_helper_block_.488
+-[NSMutableAttributedString(YYText) yy_setParagraphSpacing:range:]
+___66-[NSMutableAttributedString(YYText) yy_setParagraphSpacing:range:]_block_invoke
+___copy_helper_block_.492
+___destroy_helper_block_.493
+-[NSMutableAttributedString(YYText) yy_setParagraphSpacingBefore:range:]
+___72-[NSMutableAttributedString(YYText) yy_setParagraphSpacingBefore:range:]_block_invoke
+___copy_helper_block_.497
+___destroy_helper_block_.498
+-[NSMutableAttributedString(YYText) yy_setFirstLineHeadIndent:range:]
+___69-[NSMutableAttributedString(YYText) yy_setFirstLineHeadIndent:range:]_block_invoke
+___copy_helper_block_.502
+___destroy_helper_block_.503
+-[NSMutableAttributedString(YYText) yy_setHeadIndent:range:]
+___60-[NSMutableAttributedString(YYText) yy_setHeadIndent:range:]_block_invoke
+___copy_helper_block_.507
+___destroy_helper_block_.508
+-[NSMutableAttributedString(YYText) yy_setTailIndent:range:]
+___60-[NSMutableAttributedString(YYText) yy_setTailIndent:range:]_block_invoke
+___copy_helper_block_.512
+___destroy_helper_block_.513
+-[NSMutableAttributedString(YYText) yy_setLineBreakMode:range:]
+___63-[NSMutableAttributedString(YYText) yy_setLineBreakMode:range:]_block_invoke
+___copy_helper_block_.517
+___destroy_helper_block_.518
+-[NSMutableAttributedString(YYText) yy_setMinimumLineHeight:range:]
+___67-[NSMutableAttributedString(YYText) yy_setMinimumLineHeight:range:]_block_invoke
+___copy_helper_block_.522
+___destroy_helper_block_.523
+-[NSMutableAttributedString(YYText) yy_setMaximumLineHeight:range:]
+___67-[NSMutableAttributedString(YYText) yy_setMaximumLineHeight:range:]_block_invoke
+___copy_helper_block_.527
+___destroy_helper_block_.528
+-[NSMutableAttributedString(YYText) yy_setLineHeightMultiple:range:]
+___68-[NSMutableAttributedString(YYText) yy_setLineHeightMultiple:range:]_block_invoke
+___copy_helper_block_.532
+___destroy_helper_block_.533
+-[NSMutableAttributedString(YYText) yy_setHyphenationFactor:range:]
+___67-[NSMutableAttributedString(YYText) yy_setHyphenationFactor:range:]_block_invoke
+___copy_helper_block_.537
+___destroy_helper_block_.538
+-[NSMutableAttributedString(YYText) yy_setDefaultTabInterval:range:]
+___68-[NSMutableAttributedString(YYText) yy_setDefaultTabInterval:range:]_block_invoke
+___copy_helper_block_.542
+___destroy_helper_block_.543
+-[NSMutableAttributedString(YYText) yy_setTabStops:range:]
+___58-[NSMutableAttributedString(YYText) yy_setTabStops:range:]_block_invoke
+___copy_helper_block_.547
+___destroy_helper_block_.548
+-[NSMutableAttributedString(YYText) yy_setSuperscript:range:]
+-[NSMutableAttributedString(YYText) yy_setGlyphInfo:range:]
+-[NSMutableAttributedString(YYText) yy_setCharacterShape:range:]
+-[NSMutableAttributedString(YYText) yy_setRunDelegate:range:]
+-[NSMutableAttributedString(YYText) yy_setBaselineClass:range:]
+-[NSMutableAttributedString(YYText) yy_setBaselineInfo:range:]
+-[NSMutableAttributedString(YYText) yy_setBaselineReferenceInfo:range:]
+-[NSMutableAttributedString(YYText) yy_setRubyAnnotation:range:]
+-[NSMutableAttributedString(YYText) yy_setAttachment:range:]
+-[NSMutableAttributedString(YYText) yy_setLink:range:]
+-[NSMutableAttributedString(YYText) yy_setTextBackedString:range:]
+-[NSMutableAttributedString(YYText) yy_setTextBinding:range:]
+-[NSMutableAttributedString(YYText) yy_setTextShadow:range:]
+-[NSMutableAttributedString(YYText) yy_setTextInnerShadow:range:]
+-[NSMutableAttributedString(YYText) yy_setTextUnderline:range:]
+-[NSMutableAttributedString(YYText) yy_setTextStrikethrough:range:]
+-[NSMutableAttributedString(YYText) yy_setTextBorder:range:]
+-[NSMutableAttributedString(YYText) yy_setTextBackgroundBorder:range:]
+-[NSMutableAttributedString(YYText) yy_setTextAttachment:range:]
+-[NSMutableAttributedString(YYText) yy_setTextHighlight:range:]
+-[NSMutableAttributedString(YYText) yy_setTextBlockBorder:range:]
+-[NSMutableAttributedString(YYText) yy_setTextRubyAnnotation:range:]
+-[NSMutableAttributedString(YYText) yy_setTextGlyphTransform:range:]
+-[NSMutableAttributedString(YYText) yy_setTextHighlightRange:color:backgroundColor:userInfo:tapAction:longPressAction:]
+-[NSMutableAttributedString(YYText) yy_setTextHighlightRange:color:backgroundColor:tapAction:]
+-[NSMutableAttributedString(YYText) yy_setTextHighlightRange:color:backgroundColor:userInfo:]
+-[NSMutableAttributedString(YYText) yy_insertString:atIndex:]
+-[NSMutableAttributedString(YYText) yy_appendString:]
+-[NSMutableAttributedString(YYText) yy_setClearColorToJoinedEmoji]
+___66-[NSMutableAttributedString(YYText) yy_setClearColorToJoinedEmoji]_block_invoke
+___66-[NSMutableAttributedString(YYText) yy_setClearColorToJoinedEmoji]_block_invoke_2
+___copy_helper_block_.589
+___destroy_helper_block_.590
+-[NSMutableAttributedString(YYText) yy_removeDiscontinuousAttributesInRange:]
++[NSMutableAttributedString(YYText) yy_allDiscontinuousAttributeKeys]
+___69+[NSMutableAttributedString(YYText) yy_allDiscontinuousAttributeKeys]_block_invoke
+____YYDeviceSystemVersion_block_invoke
+___block_descriptor_tmp
+___block_descriptor_tmp.194
+_yy_canDrawWithUIKit.failSet
+_yy_canDrawWithUIKit.onceToken
+___block_descriptor_tmp.201
+___block_literal_global
+___block_descriptor_tmp.212
+___block_descriptor_tmp.371
+___block_descriptor_tmp.479
+___block_descriptor_tmp.484
+___block_descriptor_tmp.489
+___block_descriptor_tmp.494
+___block_descriptor_tmp.499
+___block_descriptor_tmp.504
+___block_descriptor_tmp.509
+___block_descriptor_tmp.514
+___block_descriptor_tmp.519
+___block_descriptor_tmp.524
+___block_descriptor_tmp.529
+___block_descriptor_tmp.534
+___block_descriptor_tmp.539
+___block_descriptor_tmp.544
+___block_descriptor_tmp.549
+_yy_setClearColorToJoinedEmoji.regex
+_yy_setClearColorToJoinedEmoji.onceToken
+___block_descriptor_tmp.583
+___block_literal_global.584
+___block_descriptor_tmp.592
+_yy_allDiscontinuousAttributeKeys.keys
+_yy_allDiscontinuousAttributeKeys.onceToken
+___block_descriptor_tmp.600
+___block_literal_global.601
+__YYDeviceSystemVersion.version
+__YYDeviceSystemVersion.onceToken
+___block_descriptor_tmp.712
+___block_literal_global.713
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Utility/NSAttributedString+YYText.m
+___YYDeviceSystemVersion_block_invoke
+__69+[NSMutableAttributedString(YYText) yy_allDiscontinuousAttributeKeys]_block_invoke
+_YYDeviceSystemVersion
+_dispatch_once
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/include/dispatch/once.h
+__destroy_helper_block_
+__copy_helper_block_
+__66-[NSMutableAttributedString(YYText) yy_setClearColorToJoinedEmoji]_block_invoke_2
+__66-[NSMutableAttributedString(YYText) yy_setClearColorToJoinedEmoji]_block_invoke
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+CFRangeMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
+__58-[NSMutableAttributedString(YYText) yy_setTabStops:range:]_block_invoke
+__68-[NSMutableAttributedString(YYText) yy_setDefaultTabInterval:range:]_block_invoke
+__67-[NSMutableAttributedString(YYText) yy_setHyphenationFactor:range:]_block_invoke
+__68-[NSMutableAttributedString(YYText) yy_setLineHeightMultiple:range:]_block_invoke
+__67-[NSMutableAttributedString(YYText) yy_setMaximumLineHeight:range:]_block_invoke
+__67-[NSMutableAttributedString(YYText) yy_setMinimumLineHeight:range:]_block_invoke
+__63-[NSMutableAttributedString(YYText) yy_setLineBreakMode:range:]_block_invoke
+__60-[NSMutableAttributedString(YYText) yy_setTailIndent:range:]_block_invoke
+__60-[NSMutableAttributedString(YYText) yy_setHeadIndent:range:]_block_invoke
+__69-[NSMutableAttributedString(YYText) yy_setFirstLineHeadIndent:range:]_block_invoke
+__72-[NSMutableAttributedString(YYText) yy_setParagraphSpacingBefore:range:]_block_invoke
+__66-[NSMutableAttributedString(YYText) yy_setParagraphSpacing:range:]_block_invoke
+__61-[NSMutableAttributedString(YYText) yy_setLineSpacing:range:]_block_invoke
+__70-[NSMutableAttributedString(YYText) yy_setBaseWritingDirection:range:]_block_invoke
+__59-[NSMutableAttributedString(YYText) yy_setAlignment:range:]_block_invoke
+__54-[NSMutableAttributedString(YYText) setYy_attributes:]_block_invoke
+__49-[NSAttributedString(YYText) yy_canDrawWithUIKit]_block_invoke_2
+__49-[NSAttributedString(YYText) yy_canDrawWithUIKit]_block_invoke
+__61-[NSAttributedString(YYText) yy_isSharedAttributesInAllRange]_block_invoke
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
+YYTextEmojiGetGlyphBoundingRectWithFontSize
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Utility/YYTextUtilities.h
+YYTextEmojiGetDescentWithFontSize
+YYTextEmojiGetAscentWithFontSize
+__51-[NSAttributedString(YYText) yy_plainTextForRange:]_block_invoke
+___YYTextAttributeGetType_block_invoke
++[YYTextBackedString stringWithString:]
+-[YYTextBackedString encodeWithCoder:]
+-[YYTextBackedString initWithCoder:]
+-[YYTextBackedString copyWithZone:]
+-[YYTextBackedString string]
+-[YYTextBackedString setString:]
+-[YYTextBackedString .cxx_destruct]
++[YYTextBinding bindingWithDeleteConfirm:]
+-[YYTextBinding encodeWithCoder:]
+-[YYTextBinding initWithCoder:]
+-[YYTextBinding copyWithZone:]
+-[YYTextBinding deleteConfirm]
+-[YYTextBinding setDeleteConfirm:]
++[YYTextShadow shadowWithColor:offset:radius:]
++[YYTextShadow shadowWithNSShadow:]
+-[YYTextShadow nsShadow]
+-[YYTextShadow encodeWithCoder:]
+-[YYTextShadow initWithCoder:]
+-[YYTextShadow copyWithZone:]
+-[YYTextShadow color]
+-[YYTextShadow setColor:]
+-[YYTextShadow offset]
+-[YYTextShadow setOffset:]
+-[YYTextShadow radius]
+-[YYTextShadow setRadius:]
+-[YYTextShadow blendMode]
+-[YYTextShadow setBlendMode:]
+-[YYTextShadow subShadow]
+-[YYTextShadow setSubShadow:]
+-[YYTextShadow .cxx_destruct]
+-[YYTextDecoration init]
++[YYTextDecoration decorationWithStyle:]
++[YYTextDecoration decorationWithStyle:width:color:]
+-[YYTextDecoration encodeWithCoder:]
+-[YYTextDecoration initWithCoder:]
+-[YYTextDecoration copyWithZone:]
+-[YYTextDecoration style]
+-[YYTextDecoration setStyle:]
+-[YYTextDecoration width]
+-[YYTextDecoration setWidth:]
+-[YYTextDecoration color]
+-[YYTextDecoration setColor:]
+-[YYTextDecoration shadow]
+-[YYTextDecoration setShadow:]
+-[YYTextDecoration .cxx_destruct]
++[YYTextBorder borderWithLineStyle:lineWidth:strokeColor:]
++[YYTextBorder borderWithFillColor:cornerRadius:]
+-[YYTextBorder init]
+-[YYTextBorder encodeWithCoder:]
+-[YYTextBorder initWithCoder:]
+-[YYTextBorder copyWithZone:]
+-[YYTextBorder lineStyle]
+-[YYTextBorder setLineStyle:]
+-[YYTextBorder strokeWidth]
+-[YYTextBorder setStrokeWidth:]
+-[YYTextBorder strokeColor]
+-[YYTextBorder setStrokeColor:]
+-[YYTextBorder lineJoin]
+-[YYTextBorder setLineJoin:]
+-[YYTextBorder insets]
+-[YYTextBorder setInsets:]
+-[YYTextBorder cornerRadius]
+-[YYTextBorder setCornerRadius:]
+-[YYTextBorder shadow]
+-[YYTextBorder setShadow:]
+-[YYTextBorder fillColor]
+-[YYTextBorder setFillColor:]
+-[YYTextBorder .cxx_destruct]
++[YYTextAttachment attachmentWithContent:]
+-[YYTextAttachment encodeWithCoder:]
+-[YYTextAttachment initWithCoder:]
+-[YYTextAttachment copyWithZone:]
+-[YYTextAttachment content]
+-[YYTextAttachment setContent:]
+-[YYTextAttachment contentMode]
+-[YYTextAttachment setContentMode:]
+-[YYTextAttachment contentInsets]
+-[YYTextAttachment setContentInsets:]
+-[YYTextAttachment userInfo]
+-[YYTextAttachment setUserInfo:]
+-[YYTextAttachment .cxx_destruct]
++[YYTextHighlight highlightWithAttributes:]
++[YYTextHighlight highlightWithBackgroundColor:]
+-[YYTextHighlight setAttributes:]
+-[YYTextHighlight encodeWithCoder:]
+-[YYTextHighlight initWithCoder:]
+-[YYTextHighlight copyWithZone:]
+-[YYTextHighlight _makeMutableAttributes]
+-[YYTextHighlight setFont:]
+-[YYTextHighlight setColor:]
+-[YYTextHighlight setStrokeWidth:]
+-[YYTextHighlight setStrokeColor:]
+-[YYTextHighlight setTextAttribute:value:]
+-[YYTextHighlight setShadow:]
+-[YYTextHighlight setInnerShadow:]
+-[YYTextHighlight setUnderline:]
+-[YYTextHighlight setStrikethrough:]
+-[YYTextHighlight setBackgroundBorder:]
+-[YYTextHighlight setBorder:]
+-[YYTextHighlight setAttachment:]
+-[YYTextHighlight attributes]
+-[YYTextHighlight userInfo]
+-[YYTextHighlight setUserInfo:]
+-[YYTextHighlight tapAction]
+-[YYTextHighlight setTapAction:]
+-[YYTextHighlight longPressAction]
+-[YYTextHighlight setLongPressAction:]
+-[YYTextHighlight .cxx_destruct]
+_YYTextAttributeGetType.dic
+_YYTextAttributeGetType.onceToken
+_OBJC_IVAR_$_YYTextBackedString._string
+_OBJC_IVAR_$_YYTextBinding._deleteConfirm
+_OBJC_IVAR_$_YYTextShadow._color
+_OBJC_IVAR_$_YYTextShadow._radius
+_OBJC_IVAR_$_YYTextShadow._offset
+_OBJC_IVAR_$_YYTextShadow._subShadow
+_OBJC_IVAR_$_YYTextShadow._blendMode
+_OBJC_IVAR_$_YYTextDecoration._style
+_OBJC_IVAR_$_YYTextDecoration._width
+_OBJC_IVAR_$_YYTextDecoration._color
+_OBJC_IVAR_$_YYTextDecoration._shadow
+_OBJC_IVAR_$_YYTextBorder._lineStyle
+_OBJC_IVAR_$_YYTextBorder._strokeWidth
+_OBJC_IVAR_$_YYTextBorder._strokeColor
+_OBJC_IVAR_$_YYTextBorder._lineJoin
+_OBJC_IVAR_$_YYTextBorder._insets
+_OBJC_IVAR_$_YYTextBorder._cornerRadius
+_OBJC_IVAR_$_YYTextBorder._shadow
+_OBJC_IVAR_$_YYTextBorder._fillColor
+_OBJC_IVAR_$_YYTextAttachment._content
+_OBJC_IVAR_$_YYTextAttachment._contentInsets
+_OBJC_IVAR_$_YYTextAttachment._userInfo
+_OBJC_IVAR_$_YYTextAttachment._contentMode
+_OBJC_IVAR_$_YYTextHighlight._attributes
+_OBJC_IVAR_$_YYTextHighlight._userInfo
+_OBJC_IVAR_$_YYTextHighlight._tapAction
+_OBJC_IVAR_$_YYTextHighlight._longPressAction
+___block_descriptor_tmp.409
+___block_literal_global.410
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/String/YYTextAttribute.m
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/String/YYTextAttribute.h
+__YYTextAttributeGetType_block_invoke
+YYTextAttributeGetType
+-[_YYTextSentinel value]
+-[_YYTextSentinel increase]
+-[YYTextAsyncLayerDisplayTask willDisplay]
+-[YYTextAsyncLayerDisplayTask setWillDisplay:]
+-[YYTextAsyncLayerDisplayTask display]
+-[YYTextAsyncLayerDisplayTask setDisplay:]
+-[YYTextAsyncLayerDisplayTask didDisplay]
+-[YYTextAsyncLayerDisplayTask setDidDisplay:]
+-[YYTextAsyncLayerDisplayTask .cxx_destruct]
++[YYTextAsyncLayer defaultValueForKey:]
+-[YYTextAsyncLayer init]
+___24-[YYTextAsyncLayer init]_block_invoke
+-[YYTextAsyncLayer dealloc]
+-[YYTextAsyncLayer setNeedsDisplay]
+-[YYTextAsyncLayer display]
+-[YYTextAsyncLayer _displayAsync:]
+___34-[YYTextAsyncLayer _displayAsync:]_block_invoke
+___34-[YYTextAsyncLayer _displayAsync:]_block_invoke.77
+___34-[YYTextAsyncLayer _displayAsync:]_block_invoke_2
+___34-[YYTextAsyncLayer _displayAsync:]_block_invoke_3
+___copy_helper_block_.85
+___destroy_helper_block_.86
+___34-[YYTextAsyncLayer _displayAsync:]_block_invoke.88
+___copy_helper_block_.89
+___destroy_helper_block_.90
+___34-[YYTextAsyncLayer _displayAsync:]_block_invoke.92
+___copy_helper_block_.95
+___destroy_helper_block_.96
+___copy_helper_block_.98
+___destroy_helper_block_.99
+___34-[YYTextAsyncLayer _displayAsync:]_block_invoke.101
+-[YYTextAsyncLayer _cancelAsyncDisplay]
+-[YYTextAsyncLayer displaysAsynchronously]
+-[YYTextAsyncLayer setDisplaysAsynchronously:]
+-[YYTextAsyncLayer .cxx_destruct]
+___YYTextAsyncLayerGetDisplayQueue_block_invoke
+_OBJC_IVAR_$__YYTextSentinel._value
+_OBJC_IVAR_$_YYTextAsyncLayerDisplayTask._willDisplay
+_OBJC_IVAR_$_YYTextAsyncLayerDisplayTask._display
+_OBJC_IVAR_$_YYTextAsyncLayerDisplayTask._didDisplay
+_init.scale
+_init.onceToken
+_OBJC_IVAR_$_YYTextAsyncLayer._sentinel
+_OBJC_IVAR_$_YYTextAsyncLayer._displaysAsynchronously
+___block_descriptor_tmp.68
+___block_descriptor_tmp.79
+___block_descriptor_tmp.87
+___block_descriptor_tmp.91
+___block_descriptor_tmp.97
+___block_descriptor_tmp.100
+___block_descriptor_tmp.102
+___block_literal_global.103
+_YYTextAsyncLayerGetDisplayQueue.queueCount
+_YYTextAsyncLayerGetDisplayQueue.queues
+_YYTextAsyncLayerGetDisplayQueue.onceToken
+_YYTextAsyncLayerGetDisplayQueue.counter
+___block_descriptor_tmp.131
+___block_literal_global.132
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Utility/YYTextAsyncLayer.m
+__YYTextAsyncLayerGetDisplayQueue_block_invoke
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Utility/YYTextAsyncLayer.h
+__34-[YYTextAsyncLayer _displayAsync:]_block_invoke.101
+__34-[YYTextAsyncLayer _displayAsync:]_block_invoke.92
+__34-[YYTextAsyncLayer _displayAsync:]_block_invoke.88
+__34-[YYTextAsyncLayer _displayAsync:]_block_invoke_3
+__34-[YYTextAsyncLayer _displayAsync:]_block_invoke_2
+__34-[YYTextAsyncLayer _displayAsync:]_block_invoke.77
+__34-[YYTextAsyncLayer _displayAsync:]_block_invoke
+YYTextAsyncLayerGetDisplayQueue
+YYTextAsyncLayerGetReleaseQueue
+__24-[YYTextAsyncLayer init]_block_invoke
+-[YYTextWeakProxy initWithTarget:]
++[YYTextWeakProxy proxyWithTarget:]
+-[YYTextWeakProxy forwardingTargetForSelector:]
+-[YYTextWeakProxy forwardInvocation:]
+-[YYTextWeakProxy methodSignatureForSelector:]
+-[YYTextWeakProxy respondsToSelector:]
+-[YYTextWeakProxy isEqual:]
+-[YYTextWeakProxy hash]
+-[YYTextWeakProxy superclass]
+-[YYTextWeakProxy class]
+-[YYTextWeakProxy isKindOfClass:]
+-[YYTextWeakProxy isMemberOfClass:]
+-[YYTextWeakProxy conformsToProtocol:]
+-[YYTextWeakProxy isProxy]
+-[YYTextWeakProxy description]
+-[YYTextWeakProxy debugDescription]
+-[YYTextWeakProxy target]
+-[YYTextWeakProxy .cxx_destruct]
+_OBJC_IVAR_$_YYTextWeakProxy._target
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Utility/YYTextWeakProxy.m
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Utility/YYTextWeakProxy.h
++[_YYCGColor colorWithCGColor:]
+-[_YYCGColor setCGColor:]
+-[_YYCGColor dealloc]
+-[_YYCGColor copyWithZone:]
+-[_YYCGColor encodeWithCoder:]
+-[_YYCGColor initWithCoder:]
+-[_YYCGColor CGColor]
++[_YYCGImage imageWithCGImage:]
+-[_YYCGImage setCGImage:]
+-[_YYCGImage dealloc]
+-[_YYCGImage copyWithZone:]
+-[_YYCGImage encodeWithCoder:]
+-[_YYCGImage initWithCoder:]
+-[_YYCGImage CGImage]
++[YYTextArchiver archivedDataWithRootObject:]
++[YYTextArchiver archiveRootObject:toFile:]
+-[YYTextArchiver init]
+-[YYTextArchiver initForWritingWithMutableData:]
+-[YYTextArchiver archiver:willEncodeObject:]
++[YYTextUnarchiver unarchiveObjectWithData:]
++[YYTextUnarchiver unarchiveObjectWithFile:]
+-[YYTextUnarchiver init]
+-[YYTextUnarchiver initForReadingWithData:]
+-[YYTextUnarchiver unarchiver:didDecodeObject:]
+___CTRunDelegateTypeID_block_invoke
+___CTRubyAnnotationTypeID_block_invoke
+_OBJC_IVAR_$__YYCGColor._CGColor
+_OBJC_IVAR_$__YYCGImage._CGImage
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_NSKeyedArchiverDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSKeyedArchiverDelegate
+l_OBJC_PROTOCOL_$_NSKeyedUnarchiverDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSKeyedUnarchiverDelegate
+_CTRunDelegateTypeID.typeID
+_CTRunDelegateTypeID.onceToken
+_CTRubyAnnotationTypeID.typeID
+_CTRubyAnnotationTypeID.onceToken
+___block_descriptor_tmp.169
+___block_literal_global.170
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/String/YYTextArchiver.m
+__CTRubyAnnotationTypeID_block_invoke
+__CTRunDelegateTypeID_block_invoke
+CTRubyAnnotationTypeID
+CTRunDelegateTypeID
+___YYTextVerticalFormRotateCharacterSet_block_invoke
+___YYTextVerticalFormRotateAndMoveCharacterSet_block_invoke
+___YYTextCAGravityToUIViewContentMode_block_invoke
+___YYTextScreenScale_block_invoke
+___YYTextScreenSize_block_invoke
+___YYTextIsAppExtension_block_invoke
+_YYTextVerticalFormRotateCharacterSet.set
+_YYTextVerticalFormRotateCharacterSet.onceToken
+_YYTextVerticalFormRotateAndMoveCharacterSet.set
+_YYTextVerticalFormRotateAndMoveCharacterSet.onceToken
+___block_descriptor_tmp.10
+___block_literal_global.11
+_YYTextCAGravityToUIViewContentMode.dic
+_YYTextCAGravityToUIViewContentMode.onceToken
+___block_descriptor_tmp.20
+___block_literal_global.21
+_YYTextScreenScale.scale
+_YYTextScreenScale.onceToken
+___block_descriptor_tmp.31
+___block_literal_global.32
+_YYTextScreenSize.onceToken
+___block_descriptor_tmp.35
+___block_literal_global.36
+_YYTextIsAppExtension.isAppExtension
+_YYTextIsAppExtension.onceToken
+___block_descriptor_tmp.52
+___block_literal_global.53
+_YYTextScreenSize.size.0
+_YYTextScreenSize.size.1
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Utility/YYTextUtilities.m
+YYTextSharedApplication
+YYTextIsAppExtension
+__YYTextIsAppExtension_block_invoke
+__YYTextScreenSize_block_invoke
+YYTextScreenSize
+__YYTextScreenScale_block_invoke
+YYTextScreenScale
+YYTextCGRectFitWithContentMode
+YYTextUIViewContentModeToCAGravity
+__YYTextCAGravityToUIViewContentMode_block_invoke
+YYTextCAGravityToUIViewContentMode
+YYTextCGAffineTransformGetFromViews
+YYTextCGAffineTransformGetFromPoints
+matrix_invert
+__YYTextVerticalFormRotateAndMoveCharacterSet_block_invoke
+YYTextVerticalFormRotateAndMoveCharacterSet
+__YYTextVerticalFormRotateCharacterSet_block_invoke
+YYTextVerticalFormRotateCharacterSet
+-[YYSelectionGrabberDot initWithFrame:]
+-[YYSelectionGrabberDot layoutSubviews]
+-[YYSelectionGrabberDot setBackgroundColor:]
+-[YYSelectionGrabberDot mirror]
+-[YYSelectionGrabberDot setMirror:]
+-[YYSelectionGrabberDot .cxx_destruct]
+-[YYSelectionGrabber initWithFrame:]
+-[YYSelectionGrabber setDotDirection:]
+-[YYSelectionGrabber setColor:]
+-[YYSelectionGrabber layoutSubviews]
+-[YYSelectionGrabber touchRect]
+-[YYSelectionGrabber dot]
+-[YYSelectionGrabber dotDirection]
+-[YYSelectionGrabber color]
+-[YYSelectionGrabber .cxx_destruct]
+-[YYTextSelectionView initWithFrame:]
+-[YYTextSelectionView dealloc]
+-[YYTextSelectionView setColor:]
+___32-[YYTextSelectionView setColor:]_block_invoke
+-[YYTextSelectionView setCaretBlinks:]
+-[YYTextSelectionView _startBlinks]
+-[YYTextSelectionView _doBlink]
+___31-[YYTextSelectionView _doBlink]_block_invoke
+___copy_helper_block_.116
+___destroy_helper_block_.117
+-[YYTextSelectionView setCaretVisible:]
+-[YYTextSelectionView setVerticalForm:]
+-[YYTextSelectionView _standardCaretRect:]
+-[YYTextSelectionView setCaretRect:]
+-[YYTextSelectionView setSelectionRects:]
+___41-[YYTextSelectionView setSelectionRects:]_block_invoke
+___41-[YYTextSelectionView setSelectionRects:]_block_invoke_2
+___copy_helper_block_.142
+___destroy_helper_block_.143
+-[YYTextSelectionView isGrabberContainsPoint:]
+-[YYTextSelectionView isStartGrabberContainsPoint:]
+-[YYTextSelectionView isEndGrabberContainsPoint:]
+-[YYTextSelectionView isCaretContainsPoint:]
+-[YYTextSelectionView isSelectionRectsContainsPoint:]
+-[YYTextSelectionView hostView]
+-[YYTextSelectionView setHostView:]
+-[YYTextSelectionView color]
+-[YYTextSelectionView isCaretBlinks]
+-[YYTextSelectionView isCaretVisible]
+-[YYTextSelectionView isVerticalForm]
+-[YYTextSelectionView caretRect]
+-[YYTextSelectionView selectionRects]
+-[YYTextSelectionView caretView]
+-[YYTextSelectionView setCaretView:]
+-[YYTextSelectionView startGrabber]
+-[YYTextSelectionView setStartGrabber:]
+-[YYTextSelectionView endGrabber]
+-[YYTextSelectionView setEndGrabber:]
+-[YYTextSelectionView caretTimer]
+-[YYTextSelectionView setCaretTimer:]
+-[YYTextSelectionView markViews]
+-[YYTextSelectionView setMarkViews:]
+-[YYTextSelectionView .cxx_destruct]
+_OBJC_IVAR_$_YYSelectionGrabberDot._mirror
+_OBJC_IVAR_$_YYSelectionGrabber._dot
+_OBJC_IVAR_$_YYSelectionGrabber._dotDirection
+_OBJC_IVAR_$_YYSelectionGrabber._color
+_OBJC_IVAR_$_YYTextSelectionView._markViews
+_OBJC_IVAR_$_YYTextSelectionView._caretView
+_OBJC_IVAR_$_YYTextSelectionView._startGrabber
+_OBJC_IVAR_$_YYTextSelectionView._endGrabber
+_OBJC_IVAR_$_YYTextSelectionView._caretTimer
+_OBJC_IVAR_$_YYTextSelectionView._color
+_OBJC_IVAR_$_YYTextSelectionView._caretBlinks
+_OBJC_IVAR_$_YYTextSelectionView._caretVisible
+___block_descriptor_tmp.119
+_OBJC_IVAR_$_YYTextSelectionView._verticalForm
+_OBJC_IVAR_$_YYTextSelectionView._caretRect
+_OBJC_IVAR_$_YYTextSelectionView._selectionRects
+___block_descriptor_tmp.129
+___block_descriptor_tmp.145
+_OBJC_IVAR_$_YYTextSelectionView._hostView
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Component/YYTextSelectionView.m
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Component/YYTextSelectionView.h
+YYTextCGPointGetDistanceToPoint
+YYTextCGRectGetCenter
+__41-[YYTextSelectionView setSelectionRects:]_block_invoke_2
+YYTextCGRectPixelRound
+YYTextCGPointPixelRound
+__41-[YYTextSelectionView setSelectionRects:]_block_invoke
+__inline_isinfd
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/include/math.h
+__inline_isnand
+__31-[YYTextSelectionView _doBlink]_block_invoke
+__32-[YYTextSelectionView setColor:]_block_invoke
+UIEdgeInsetsInsetRect
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGeometry.h
+-[YYTextRubyAnnotation init]
++[YYTextRubyAnnotation rubyWithCTRubyRef:]
+-[YYTextRubyAnnotation CTRubyAnnotation]
+-[YYTextRubyAnnotation copyWithZone:]
+-[YYTextRubyAnnotation encodeWithCoder:]
+-[YYTextRubyAnnotation initWithCoder:]
+-[YYTextRubyAnnotation alignment]
+-[YYTextRubyAnnotation setAlignment:]
+-[YYTextRubyAnnotation overhang]
+-[YYTextRubyAnnotation setOverhang:]
+-[YYTextRubyAnnotation sizeFactor]
+-[YYTextRubyAnnotation setSizeFactor:]
+-[YYTextRubyAnnotation textBefore]
+-[YYTextRubyAnnotation setTextBefore:]
+-[YYTextRubyAnnotation textAfter]
+-[YYTextRubyAnnotation setTextAfter:]
+-[YYTextRubyAnnotation textInterCharacter]
+-[YYTextRubyAnnotation setTextInterCharacter:]
+-[YYTextRubyAnnotation textInline]
+-[YYTextRubyAnnotation setTextInline:]
+-[YYTextRubyAnnotation .cxx_destruct]
+_OBJC_IVAR_$_YYTextRubyAnnotation._textBefore
+_OBJC_IVAR_$_YYTextRubyAnnotation._textAfter
+_OBJC_IVAR_$_YYTextRubyAnnotation._textInterCharacter
+_OBJC_IVAR_$_YYTextRubyAnnotation._textInline
+_OBJC_IVAR_$_YYTextRubyAnnotation._alignment
+_OBJC_IVAR_$_YYTextRubyAnnotation._overhang
+_OBJC_IVAR_$_YYTextRubyAnnotation._sizeFactor
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/String/YYTextRubyAnnotation.m
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/String/YYTextRubyAnnotation.h
+-[YYTextLinePositionSimpleModifier modifyLines:fromText:inContainer:]
+-[YYTextLinePositionSimpleModifier copyWithZone:]
+-[YYTextLinePositionSimpleModifier fixedLineHeight]
+-[YYTextLinePositionSimpleModifier setFixedLineHeight:]
++[YYTextContainer containerWithSize:]
++[YYTextContainer containerWithSize:insets:]
++[YYTextContainer containerWithPath:]
+-[YYTextContainer init]
+-[YYTextContainer copyWithZone:]
+-[YYTextContainer mutableCopyWithZone:]
+-[YYTextContainer encodeWithCoder:]
+-[YYTextContainer initWithCoder:]
+-[YYTextContainer size]
+-[YYTextContainer setSize:]
+-[YYTextContainer insets]
+-[YYTextContainer setInsets:]
+-[YYTextContainer path]
+-[YYTextContainer setPath:]
+-[YYTextContainer exclusionPaths]
+-[YYTextContainer setExclusionPaths:]
+-[YYTextContainer isPathFillEvenOdd]
+-[YYTextContainer setPathFillEvenOdd:]
+-[YYTextContainer pathLineWidth]
+-[YYTextContainer setPathLineWidth:]
+-[YYTextContainer isVerticalForm]
+-[YYTextContainer setVerticalForm:]
+-[YYTextContainer maximumNumberOfRows]
+-[YYTextContainer setMaximumNumberOfRows:]
+-[YYTextContainer truncationType]
+-[YYTextContainer setTruncationType:]
+-[YYTextContainer truncationToken]
+-[YYTextContainer setTruncationToken:]
+-[YYTextContainer setLinePositionModifier:]
+-[YYTextContainer linePositionModifier]
+-[YYTextContainer .cxx_destruct]
+-[YYTextLayout _init]
++[YYTextLayout layoutWithContainerSize:text:]
++[YYTextLayout layoutWithContainer:text:]
++[YYTextLayout layoutWithContainer:text:range:]
+___47+[YYTextLayout layoutWithContainer:text:range:]_block_invoke
+___47+[YYTextLayout layoutWithContainer:text:range:]_block_invoke_2
+___47+[YYTextLayout layoutWithContainer:text:range:]_block_invoke_3
+___47+[YYTextLayout layoutWithContainer:text:range:]_block_invoke.350
+___copy_helper_block_.369
+___destroy_helper_block_.370
++[YYTextLayout layoutWithContainers:text:]
++[YYTextLayout layoutWithContainers:text:range:]
+-[YYTextLayout setFrameSetter:]
+-[YYTextLayout setFrame:]
+-[YYTextLayout dealloc]
+-[YYTextLayout encodeWithCoder:]
+-[YYTextLayout initWithCoder:]
+-[YYTextLayout copyWithZone:]
+-[YYTextLayout _rowIndexForEdge:]
+-[YYTextLayout _closestRowIndexForEdge:]
+-[YYTextLayout _runForLine:position:]
+-[YYTextLayout _insideComposedCharacterSequences:position:block:]
+___65-[YYTextLayout _insideComposedCharacterSequences:position:block:]_block_invoke
+___copy_helper_block_.444
+___destroy_helper_block_.445
+-[YYTextLayout _insideEmoji:position:block:]
+-[YYTextLayout _isRightToLeftInLine:atPoint:]
+-[YYTextLayout _correctedRangeWithEdge:]
+-[YYTextLayout lineIndexForRow:]
+-[YYTextLayout lineCountForRow:]
+-[YYTextLayout rowIndexForLine:]
+-[YYTextLayout lineIndexForPoint:]
+-[YYTextLayout closestLineIndexForPoint:]
+-[YYTextLayout offsetForTextPosition:lineIndex:]
+-[YYTextLayout textPositionForPoint:lineIndex:]
+-[YYTextLayout closestPositionToPoint:]
+___39-[YYTextLayout closestPositionToPoint:]_block_invoke
+___39-[YYTextLayout closestPositionToPoint:]_block_invoke.488
+___copy_helper_block_.489
+___destroy_helper_block_.490
+-[YYTextLayout positionForPoint:oldPosition:otherPosition:]
+-[YYTextLayout textRangeAtPoint:]
+-[YYTextLayout closestTextRangeAtPoint:]
+-[YYTextLayout textRangeByExtendingPosition:]
+___45-[YYTextLayout textRangeByExtendingPosition:]_block_invoke
+___copy_helper_block_.510
+___destroy_helper_block_.511
+___45-[YYTextLayout textRangeByExtendingPosition:]_block_invoke.513
+___copy_helper_block_.514
+___destroy_helper_block_.515
+-[YYTextLayout textRangeByExtendingPosition:inDirection:offset:]
+-[YYTextLayout lineIndexForPosition:]
+-[YYTextLayout linePositionForPosition:]
+-[YYTextLayout caretRectForPosition:]
+-[YYTextLayout firstRectForRange:]
+-[YYTextLayout rectForRange:]
+-[YYTextLayout selectionRectsForRange:]
+-[YYTextLayout selectionRectsWithoutStartAndEndForRange:]
+-[YYTextLayout selectionRectsWithOnlyStartAndEndForRange:]
+-[YYTextLayout drawInContext:size:point:view:layer:debug:cancel:]
+_YYTextDrawBorder
+_YYTextDrawDecoration
+_YYTextDrawDebug
+-[YYTextLayout drawInContext:size:debug:]
+-[YYTextLayout addAttachmentToView:layer:]
+-[YYTextLayout removeAttachmentFromViewAndLayer]
+-[YYTextLayout container]
+-[YYTextLayout setContainer:]
+-[YYTextLayout text]
+-[YYTextLayout setText:]
+-[YYTextLayout range]
+-[YYTextLayout setRange:]
+-[YYTextLayout frameSetter]
+-[YYTextLayout frame]
+-[YYTextLayout lines]
+-[YYTextLayout setLines:]
+-[YYTextLayout truncatedLine]
+-[YYTextLayout setTruncatedLine:]
+-[YYTextLayout attachments]
+-[YYTextLayout setAttachments:]
+-[YYTextLayout attachmentRanges]
+-[YYTextLayout setAttachmentRanges:]
+-[YYTextLayout attachmentRects]
+-[YYTextLayout setAttachmentRects:]
+-[YYTextLayout attachmentContentsSet]
+-[YYTextLayout setAttachmentContentsSet:]
+-[YYTextLayout rowCount]
+-[YYTextLayout setRowCount:]
+-[YYTextLayout visibleRange]
+-[YYTextLayout setVisibleRange:]
+-[YYTextLayout textBoundingRect]
+-[YYTextLayout setTextBoundingRect:]
+-[YYTextLayout textBoundingSize]
+-[YYTextLayout setTextBoundingSize:]
+-[YYTextLayout containsHighlight]
+-[YYTextLayout setContainsHighlight:]
+-[YYTextLayout needDrawBlockBorder]
+-[YYTextLayout setNeedDrawBlockBorder:]
+-[YYTextLayout needDrawBackgroundBorder]
+-[YYTextLayout setNeedDrawBackgroundBorder:]
+-[YYTextLayout needDrawShadow]
+-[YYTextLayout setNeedDrawShadow:]
+-[YYTextLayout needDrawUnderline]
+-[YYTextLayout setNeedDrawUnderline:]
+-[YYTextLayout needDrawText]
+-[YYTextLayout setNeedDrawText:]
+-[YYTextLayout needDrawAttachment]
+-[YYTextLayout setNeedDrawAttachment:]
+-[YYTextLayout needDrawInnerShadow]
+-[YYTextLayout setNeedDrawInnerShadow:]
+-[YYTextLayout needDrawStrikethrough]
+-[YYTextLayout setNeedDrawStrikethrough:]
+-[YYTextLayout needDrawBorder]
+-[YYTextLayout setNeedDrawBorder:]
+-[YYTextLayout lineRowsIndex]
+-[YYTextLayout setLineRowsIndex:]
+-[YYTextLayout lineRowsEdge]
+-[YYTextLayout setLineRowsEdge:]
+-[YYTextLayout .cxx_destruct]
+_YYTextDrawBorderRects
+_YYTextSetLinePatternInContext
+_YYTextMergeRectInSameLine
+_YYTextDrawRun
+_YYTextGetCGColor
+___YYTextGetCGColor_block_invoke
+_YYTextDrawLineStyle
+_OBJC_IVAR_$_YYTextLinePositionSimpleModifier._fixedLineHeight
+l_OBJC_PROTOCOL_$_YYTextLinePositionModifier
+l_OBJC_LABEL_PROTOCOL_$_YYTextLinePositionModifier
+_OBJC_IVAR_$_YYTextContainer._lock
+_OBJC_IVAR_$_YYTextContainer._pathFillEvenOdd
+_OBJC_IVAR_$_YYTextContainer._size
+_OBJC_IVAR_$_YYTextContainer._insets
+_OBJC_IVAR_$_YYTextContainer._path
+_OBJC_IVAR_$_YYTextContainer._exclusionPaths
+_OBJC_IVAR_$_YYTextContainer._pathLineWidth
+_OBJC_IVAR_$_YYTextContainer._verticalForm
+_OBJC_IVAR_$_YYTextContainer._maximumNumberOfRows
+_OBJC_IVAR_$_YYTextContainer._truncationType
+_OBJC_IVAR_$_YYTextContainer._truncationToken
+_OBJC_IVAR_$_YYTextContainer._linePositionModifier
+_OBJC_IVAR_$_YYTextContainer._readonly
+_layoutWithContainer:text:range:.needFixJoinedEmojiBug
+_layoutWithContainer:text:range:.needFixLayoutSizeBug
+_layoutWithContainer:text:range:.onceToken
+___block_descriptor_tmp.263
+___block_descriptor_tmp.345
+___block_descriptor_tmp.372
+_OBJC_IVAR_$_YYTextLayout._frameSetter
+_OBJC_IVAR_$_YYTextLayout._frame
+_OBJC_IVAR_$_YYTextLayout._lineRowsIndex
+_OBJC_IVAR_$_YYTextLayout._lineRowsEdge
+_OBJC_IVAR_$_YYTextLayout._text
+_OBJC_IVAR_$_YYTextLayout._container
+_OBJC_IVAR_$_YYTextLayout._range
+_OBJC_IVAR_$_YYTextLayout._rowCount
+___block_descriptor_tmp.447
+_OBJC_IVAR_$_YYTextLayout._lines
+_OBJC_IVAR_$_YYTextLayout._visibleRange
+___block_descriptor_tmp.485
+___block_descriptor_tmp.491
+___block_descriptor_tmp.512
+___block_descriptor_tmp.516
+_OBJC_IVAR_$_YYTextLayout._truncatedLine
+_OBJC_IVAR_$_YYTextLayout._attachments
+_OBJC_IVAR_$_YYTextLayout._attachmentRanges
+_OBJC_IVAR_$_YYTextLayout._attachmentRects
+_OBJC_IVAR_$_YYTextLayout._attachmentContentsSet
+_OBJC_IVAR_$_YYTextLayout._textBoundingRect
+_OBJC_IVAR_$_YYTextLayout._textBoundingSize
+_OBJC_IVAR_$_YYTextLayout._containsHighlight
+_OBJC_IVAR_$_YYTextLayout._needDrawBlockBorder
+_OBJC_IVAR_$_YYTextLayout._needDrawBackgroundBorder
+_OBJC_IVAR_$_YYTextLayout._needDrawShadow
+_OBJC_IVAR_$_YYTextLayout._needDrawUnderline
+_OBJC_IVAR_$_YYTextLayout._needDrawText
+_OBJC_IVAR_$_YYTextLayout._needDrawAttachment
+_OBJC_IVAR_$_YYTextLayout._needDrawInnerShadow
+_OBJC_IVAR_$_YYTextLayout._needDrawStrikethrough
+_OBJC_IVAR_$_YYTextLayout._needDrawBorder
+_YYTextGetCGColor.defaultColor
+_YYTextGetCGColor.onceToken
+___block_descriptor_tmp.793
+___block_literal_global.794
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Component/YYTextLayout.m
+YYTextDrawLineStyle
+YYTextCGFloatPixelFloor
+YYTextCGFloatPixelHalf
+YYTextCGFloatToPixel
+YYTextCGFloatPixelRound
+__YYTextGetCGColor_block_invoke
+YYTextGetCGColor
+YYTextDrawRun
+YYTextCTFontContainsColorBitmapGlyphs
+YYTextMergeRectInSameLine
+YYTextSetLinePatternInContext
+YYTextDrawBorderRects
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Component/YYTextLayout.h
+YYTextDrawDebug
+YYTextCGRectPixelHalf
+YYTextCGPointPixelHalf
+YYTextDrawDecoration
+YYTextGetRunsMaxMetric
+YYTextIsLinebreakString
+YYTextIsLinebreakChar
+YYTextDrawBorder
+YYTextDrawInnerShadow
+YYTextDrawAttachment
+YYTextDrawText
+YYTextDrawShadow
+YYTextDrawBlockBorder
+YYTextLinebreakTailLength
+__45-[YYTextLayout textRangeByExtendingPosition:]_block_invoke.513
+__45-[YYTextLayout textRangeByExtendingPosition:]_block_invoke
+__39-[YYTextLayout closestPositionToPoint:]_block_invoke.488
+__39-[YYTextLayout closestPositionToPoint:]_block_invoke
+__65-[YYTextLayout _insideComposedCharacterSequences:position:block:]_block_invoke
+__47+[YYTextLayout layoutWithContainer:text:range:]_block_invoke.350
+__47+[YYTextLayout layoutWithContainer:text:range:]_block_invoke_3
+__47+[YYTextLayout layoutWithContainer:text:range:]_block_invoke_2
+__47+[YYTextLayout layoutWithContainer:text:range:]_block_invoke
+YYTextUIEdgeInsetsInvert
+YYTextClipCGSize
+-[YYTextContainerView initWithFrame:]
+-[YYTextContainerView setDebugOption:]
+-[YYTextContainerView setTextVerticalAlignment:]
+-[YYTextContainerView setContentsFadeDuration:]
+-[YYTextContainerView setLayout:]
+-[YYTextContainerView setLayout:withFadeDuration:]
+-[YYTextContainerView drawRect:]
+-[YYTextContainerView setFrame:]
+-[YYTextContainerView setBounds:]
+-[YYTextContainerView canBecomeFirstResponder]
+-[YYTextContainerView canPerformAction:withSender:]
+-[YYTextContainerView forwardingTargetForSelector:]
+-[YYTextContainerView hostView]
+-[YYTextContainerView setHostView:]
+-[YYTextContainerView debugOption]
+-[YYTextContainerView textVerticalAlignment]
+-[YYTextContainerView layout]
+-[YYTextContainerView contentsFadeDuration]
+-[YYTextContainerView .cxx_destruct]
+_OBJC_IVAR_$_YYTextContainerView._attachmentViews
+_OBJC_IVAR_$_YYTextContainerView._attachmentLayers
+_OBJC_IVAR_$_YYTextContainerView._debugOption
+_OBJC_IVAR_$_YYTextContainerView._textVerticalAlignment
+_OBJC_IVAR_$_YYTextContainerView._contentsFadeDuration
+_OBJC_IVAR_$_YYTextContainerView._layout
+_OBJC_IVAR_$_YYTextContainerView._attachmentChanged
+_OBJC_IVAR_$_YYTextContainerView._hostView
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Component/YYTextContainerView.m
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Component/YYTextContainerView.h
+__CGSizeEqualToSize
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
++[NSParagraphStyle(YYText) yy_styleWithCTStyle:]
+___48+[NSParagraphStyle(YYText) yy_styleWithCTStyle:]_block_invoke
+-[NSParagraphStyle(YYText) yy_CTStyle]
+___38-[NSParagraphStyle(YYText) yy_CTStyle]_block_invoke
+___copy_helper_block_.79
+___destroy_helper_block_.80
+___block_descriptor_tmp.82
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Utility/NSParagraphStyle+YYText.m
+__38-[NSParagraphStyle(YYText) yy_CTStyle]_block_invoke
+__48+[NSParagraphStyle(YYText) yy_styleWithCTStyle:]_block_invoke
+-[UIPasteboard(YYText) setYy_PNGData:]
+-[UIPasteboard(YYText) yy_PNGData]
+-[UIPasteboard(YYText) setYy_JPEGData:]
+-[UIPasteboard(YYText) yy_JPEGData]
+-[UIPasteboard(YYText) setYy_GIFData:]
+-[UIPasteboard(YYText) yy_GIFData]
+-[UIPasteboard(YYText) setYy_WEBPData:]
+-[UIPasteboard(YYText) yy_WEBPData]
+-[UIPasteboard(YYText) setYy_ImageData:]
+-[UIPasteboard(YYText) yy_ImageData]
+-[UIPasteboard(YYText) setYy_AttributedString:]
+___47-[UIPasteboard(YYText) setYy_AttributedString:]_block_invoke
+-[UIPasteboard(YYText) yy_AttributedString]
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Utility/UIPasteboard+YYText.m
+__47-[UIPasteboard(YYText) setYy_AttributedString:]_block_invoke
+-[YYTextDebugOption copyWithZone:]
+-[YYTextDebugOption needDrawDebug]
+-[YYTextDebugOption clear]
++[YYTextDebugOption addDebugTarget:]
++[YYTextDebugOption removeDebugTarget:]
++[YYTextDebugOption sharedDebugOption]
++[YYTextDebugOption setSharedDebugOption:]
+-[YYTextDebugOption baselineColor]
+-[YYTextDebugOption setBaselineColor:]
+-[YYTextDebugOption CTFrameBorderColor]
+-[YYTextDebugOption setCTFrameBorderColor:]
+-[YYTextDebugOption CTFrameFillColor]
+-[YYTextDebugOption setCTFrameFillColor:]
+-[YYTextDebugOption CTLineBorderColor]
+-[YYTextDebugOption setCTLineBorderColor:]
+-[YYTextDebugOption CTLineFillColor]
+-[YYTextDebugOption setCTLineFillColor:]
+-[YYTextDebugOption CTLineNumberColor]
+-[YYTextDebugOption setCTLineNumberColor:]
+-[YYTextDebugOption CTRunBorderColor]
+-[YYTextDebugOption setCTRunBorderColor:]
+-[YYTextDebugOption CTRunFillColor]
+-[YYTextDebugOption setCTRunFillColor:]
+-[YYTextDebugOption CTRunNumberColor]
+-[YYTextDebugOption setCTRunNumberColor:]
+-[YYTextDebugOption CGGlyphBorderColor]
+-[YYTextDebugOption setCGGlyphBorderColor:]
+-[YYTextDebugOption CGGlyphFillColor]
+-[YYTextDebugOption setCGGlyphFillColor:]
+-[YYTextDebugOption .cxx_destruct]
+____initSharedDebug_block_invoke
+__sharedDebugSetRetain
+__sharedDebugSetRelease
+__sharedDebugOption
+_OBJC_IVAR_$_YYTextDebugOption._baselineColor
+_OBJC_IVAR_$_YYTextDebugOption._CTFrameBorderColor
+_OBJC_IVAR_$_YYTextDebugOption._CTFrameFillColor
+_OBJC_IVAR_$_YYTextDebugOption._CTLineBorderColor
+_OBJC_IVAR_$_YYTextDebugOption._CTLineFillColor
+_OBJC_IVAR_$_YYTextDebugOption._CTLineNumberColor
+_OBJC_IVAR_$_YYTextDebugOption._CTRunBorderColor
+_OBJC_IVAR_$_YYTextDebugOption._CTRunFillColor
+_OBJC_IVAR_$_YYTextDebugOption._CTRunNumberColor
+_OBJC_IVAR_$_YYTextDebugOption._CGGlyphBorderColor
+_OBJC_IVAR_$_YYTextDebugOption._CGGlyphFillColor
+__sharedDebugLock
+__sharedDebugTargets
+__initSharedDebug.onceToken
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Component/YYTextDebugOption.m
+_sharedDebugSetRelease
+_sharedDebugSetRetain
+___initSharedDebug_block_invoke
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Component/YYTextDebugOption.h
+_setSharedDebugOption
+_initSharedDebug
+_getSharedDebugOption
+_removeDebugTarget
+_addDebugTarget
+_sharedDebugSetFunction
++[YYTextEffectWindow sharedWindow]
+___34+[YYTextEffectWindow sharedWindow]_block_invoke
+-[YYTextEffectWindow becomeKeyWindow]
+-[YYTextEffectWindow rootViewController]
+-[YYTextEffectWindow _updateWindowLevel]
+-[YYTextEffectWindow _keyboardDirection]
+-[YYTextEffectWindow _correctedCaptureCenter:]
+-[YYTextEffectWindow _correctedCenter:forMagnifier:rotation:]
+-[YYTextEffectWindow _updateMagnifier:]
+___39-[YYTextEffectWindow _updateMagnifier:]_block_invoke
+___copy_helper_block_.96
+___destroy_helper_block_.97
+___39-[YYTextEffectWindow _updateMagnifier:]_block_invoke.109
+-[YYTextEffectWindow showMagnifier:]
+___36-[YYTextEffectWindow showMagnifier:]_block_invoke
+___copy_helper_block_.144
+___destroy_helper_block_.145
+___36-[YYTextEffectWindow showMagnifier:]_block_invoke.147
+-[YYTextEffectWindow moveMagnifier:]
+-[YYTextEffectWindow hideMagnifier:]
+___36-[YYTextEffectWindow hideMagnifier:]_block_invoke
+___copy_helper_block_.153
+___destroy_helper_block_.154
+___36-[YYTextEffectWindow hideMagnifier:]_block_invoke.156
+___copy_helper_block_.159
+___destroy_helper_block_.160
+-[YYTextEffectWindow _updateSelectionGrabberDot:selection:]
+-[YYTextEffectWindow showSelectionDot:]
+-[YYTextEffectWindow hideSelectionDot:]
+_sharedWindow.one
+_sharedWindow.onceToken
+__updateMagnifier:.placeholder
+__updateMagnifier:.onceToken
+___block_descriptor_tmp.98
+___block_descriptor_tmp.111
+___block_descriptor_tmp.146
+___block_descriptor_tmp.149
+___block_literal_global.150
+___block_descriptor_tmp.155
+___block_descriptor_tmp.161
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Component/YYTextEffectWindow.m
+YYTextCGPointGetDistanceToRect
+YYTextCGRectGetArea
+__36-[YYTextEffectWindow hideMagnifier:]_block_invoke.156
+__36-[YYTextEffectWindow hideMagnifier:]_block_invoke
+__CGPointApplyAffineTransform
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGAffineTransform.h
+__36-[YYTextEffectWindow showMagnifier:]_block_invoke.147
+__36-[YYTextEffectWindow showMagnifier:]_block_invoke
+__39-[YYTextEffectWindow _updateMagnifier:]_block_invoke.109
+__39-[YYTextEffectWindow _updateMagnifier:]_block_invoke
+YYTextCGAffineTransformGetRotation
+YYTextRadiansToDegrees
+__34+[YYTextEffectWindow sharedWindow]_block_invoke
+-[YYTextSimpleMarkdownParser initRegex]
+-[YYTextSimpleMarkdownParser init]
+-[YYTextSimpleMarkdownParser setFontSize:]
+-[YYTextSimpleMarkdownParser setHeaderFontSize:]
+-[YYTextSimpleMarkdownParser _updateFonts]
+-[YYTextSimpleMarkdownParser setColorWithBrightTheme]
+-[YYTextSimpleMarkdownParser setColorWithDarkTheme]
+-[YYTextSimpleMarkdownParser lenghOfBeginWhiteInString:withRange:]
+-[YYTextSimpleMarkdownParser lenghOfEndWhiteInString:withRange:]
+-[YYTextSimpleMarkdownParser lenghOfBeginChar:inString:withRange:]
+-[YYTextSimpleMarkdownParser parseText:selectedRange:]
+___54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke
+___54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.110
+___copy_helper_block_.115
+___destroy_helper_block_.116
+___54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.118
+___copy_helper_block_.119
+___destroy_helper_block_.120
+___54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.122
+___copy_helper_block_.123
+___destroy_helper_block_.124
+___54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.126
+___copy_helper_block_.127
+___destroy_helper_block_.128
+___54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.130
+___copy_helper_block_.131
+___destroy_helper_block_.132
+___54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.134
+___copy_helper_block_.135
+___destroy_helper_block_.136
+___54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.138
+___copy_helper_block_.147
+___destroy_helper_block_.148
+___54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.150
+___54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.156
+___copy_helper_block_.161
+___destroy_helper_block_.162
+___54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.164
+___copy_helper_block_.165
+___destroy_helper_block_.166
+___54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.168
+___copy_helper_block_.169
+___destroy_helper_block_.170
+___54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.172
+___copy_helper_block_.173
+___destroy_helper_block_.174
+___54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.176
+___copy_helper_block_.177
+___destroy_helper_block_.178
+___54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.180
+___copy_helper_block_.187
+___destroy_helper_block_.188
+-[YYTextSimpleMarkdownParser fontSize]
+-[YYTextSimpleMarkdownParser headerFontSize]
+-[YYTextSimpleMarkdownParser textColor]
+-[YYTextSimpleMarkdownParser setTextColor:]
+-[YYTextSimpleMarkdownParser controlTextColor]
+-[YYTextSimpleMarkdownParser setControlTextColor:]
+-[YYTextSimpleMarkdownParser headerTextColor]
+-[YYTextSimpleMarkdownParser setHeaderTextColor:]
+-[YYTextSimpleMarkdownParser inlineTextColor]
+-[YYTextSimpleMarkdownParser setInlineTextColor:]
+-[YYTextSimpleMarkdownParser codeTextColor]
+-[YYTextSimpleMarkdownParser setCodeTextColor:]
+-[YYTextSimpleMarkdownParser linkTextColor]
+-[YYTextSimpleMarkdownParser setLinkTextColor:]
+-[YYTextSimpleMarkdownParser .cxx_destruct]
+-[YYTextSimpleEmoticonParser init]
+-[YYTextSimpleEmoticonParser emoticonMapper]
+-[YYTextSimpleEmoticonParser setEmoticonMapper:]
+-[YYTextSimpleEmoticonParser _replaceTextInRange:withLength:selectedRange:]
+-[YYTextSimpleEmoticonParser parseText:selectedRange:]
+-[YYTextSimpleEmoticonParser .cxx_destruct]
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._regexEscape
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._regexHeader
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._regexH1
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._regexH2
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._regexBreakline
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._regexEmphasis
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._regexStrong
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._regexStrongEmphasis
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._regexUnderline
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._regexStrikethrough
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._regexInlineCode
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._regexLink
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._regexLinkRefer
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._regexList
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._regexBlockQuote
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._regexCodeBlock
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._regexNotEmptyLine
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._fontSize
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._headerFontSize
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._font
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._headerFonts
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._boldFont
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._italicFont
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._boldItalicFont
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._monospaceFont
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._textColor
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._controlTextColor
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._headerTextColor
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._inlineTextColor
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._codeTextColor
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._linkTextColor
+_OBJC_IVAR_$_YYTextSimpleMarkdownParser._border
+___block_descriptor_tmp.117
+___block_descriptor_tmp.121
+___block_descriptor_tmp.125
+___block_descriptor_tmp.133
+___block_descriptor_tmp.137
+___block_descriptor_tmp.163
+___block_descriptor_tmp.167
+___block_descriptor_tmp.171
+___block_descriptor_tmp.175
+___block_descriptor_tmp.179
+___block_descriptor_tmp.189
+l_OBJC_PROTOCOL_$_YYTextParser
+l_OBJC_LABEL_PROTOCOL_$_YYTextParser
+_OBJC_IVAR_$_YYTextSimpleEmoticonParser._lock
+_OBJC_IVAR_$_YYTextSimpleEmoticonParser._mapper
+_OBJC_IVAR_$_YYTextSimpleEmoticonParser._regex
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/String/YYTextParser.m
+NSEqualRanges
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/String/YYTextParser.h
+__54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.180
+YYTextCGFloatFromPixel
+__54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.176
+__54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.172
+__54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.168
+__54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.164
+__54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.156
+__54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.150
+__54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.138
+__54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.134
+__54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.130
+__54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.126
+__54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.122
+__54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.118
+__54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke.110
+__54-[YYTextSimpleMarkdownParser parseText:selectedRange:]_block_invoke
+YYTextFontWithBoldItalic
+YYTextFontWithItalic
+YYTextFontWithBold
+-[_YYTextMagnifierCaret initWithFrame:]
+-[_YYTextMagnifierCaret init]
+-[_YYTextMagnifierCaret type]
+-[_YYTextMagnifierCaret sizeThatFits:]
+-[_YYTextMagnifierCaret setSnapshot:]
+-[_YYTextMagnifierCaret snapshot]
+-[_YYTextMagnifierCaret snapshotSize]
+-[_YYTextMagnifierCaret fitSize]
++[_YYTextMagnifierCaret coverImage]
+___35+[_YYTextMagnifierCaret coverImage]_block_invoke
+-[_YYTextMagnifierCaret .cxx_destruct]
+-[_YYTextMagnifierRanged initWithFrame:]
+-[_YYTextMagnifierRanged init]
+-[_YYTextMagnifierRanged type]
+-[_YYTextMagnifierRanged sizeThatFits:]
+-[_YYTextMagnifierRanged setSnapshot:]
+-[_YYTextMagnifierRanged snapshot]
+-[_YYTextMagnifierRanged snapshotSize]
+-[_YYTextMagnifierRanged fitSize]
++[_YYTextMagnifierRanged coverImage]
+___36+[_YYTextMagnifierRanged coverImage]_block_invoke
+-[_YYTextMagnifierRanged .cxx_destruct]
++[YYTextMagnifier magnifierWithType:]
+-[YYTextMagnifier initWithFrame:]
+-[YYTextMagnifier type]
+-[YYTextMagnifier fitSize]
+-[YYTextMagnifier snapshotSize]
+-[YYTextMagnifier snapshot]
+-[YYTextMagnifier setSnapshot:]
+-[YYTextMagnifier hostView]
+-[YYTextMagnifier setHostView:]
+-[YYTextMagnifier hostCaptureCenter]
+-[YYTextMagnifier setHostCaptureCenter:]
+-[YYTextMagnifier hostPopoverCenter]
+-[YYTextMagnifier setHostPopoverCenter:]
+-[YYTextMagnifier hostVerticalForm]
+-[YYTextMagnifier setHostVerticalForm:]
+-[YYTextMagnifier captureDisabled]
+-[YYTextMagnifier setCaptureDisabled:]
+-[YYTextMagnifier captureFadeAnimation]
+-[YYTextMagnifier setCaptureFadeAnimation:]
+-[YYTextMagnifier .cxx_destruct]
+_coverImage.image
+_coverImage.onceToken
+_coverImage.image.69
+_coverImage.onceToken.70
+___block_descriptor_tmp.73
+___block_literal_global.74
+_OBJC_IVAR_$_YYTextMagnifier._type
+_OBJC_IVAR_$_YYTextMagnifier._fitSize
+_OBJC_IVAR_$_YYTextMagnifier._snapshotSize
+_OBJC_IVAR_$_YYTextMagnifier._snapshot
+_OBJC_IVAR_$_YYTextMagnifier._hostView
+_OBJC_IVAR_$_YYTextMagnifier._hostCaptureCenter
+_OBJC_IVAR_$_YYTextMagnifier._hostPopoverCenter
+_OBJC_IVAR_$_YYTextMagnifier._hostVerticalForm
+_OBJC_IVAR_$_YYTextMagnifier._captureDisabled
+_OBJC_IVAR_$_YYTextMagnifier._captureFadeAnimation
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Component/YYTextMagnifier.m
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Component/YYTextMagnifier.h
+__36+[_YYTextMagnifierRanged coverImage]_block_invoke
+__35+[_YYTextMagnifierCaret coverImage]_block_invoke
++[YYTextTransaction transactionWithTarget:selector:]
+-[YYTextTransaction commit]
+-[YYTextTransaction hash]
+-[YYTextTransaction isEqual:]
+-[YYTextTransaction target]
+-[YYTextTransaction setTarget:]
+-[YYTextTransaction selector]
+-[YYTextTransaction setSelector:]
+-[YYTextTransaction .cxx_destruct]
+___YYTextTransactionSetup_block_invoke
+_YYRunLoopObserverCallBack
+___YYRunLoopObserverCallBack_block_invoke
+_transactionSet
+_OBJC_IVAR_$_YYTextTransaction._target
+_OBJC_IVAR_$_YYTextTransaction._selector
+_YYTextTransactionSetup.onceToken
+___block_descriptor_tmp.41
+___block_literal_global.42
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Utility/YYTextTransaction.m
+__YYRunLoopObserverCallBack_block_invoke
+YYRunLoopObserverCallBack
+__YYTextTransactionSetup_block_invoke
+YYTextTransactionSetup
+-[YYLabel _updateIfNeeded]
+-[YYLabel _updateLayout]
+-[YYLabel _setLayoutNeedUpdate]
+-[YYLabel _setLayoutNeedRedraw]
+-[YYLabel _clearInnerLayout]
+___28-[YYLabel _clearInnerLayout]_block_invoke
+___28-[YYLabel _clearInnerLayout]_block_invoke_2
+___copy_helper_block_.22
+___destroy_helper_block_.23
+-[YYLabel _innerLayout]
+-[YYLabel _highlightLayout]
++[YYLabel _shrinkLayoutWithLayout:]
+-[YYLabel _startLongPressTimer]
+-[YYLabel _endLongPressTimer]
+-[YYLabel _trackDidLongPress]
+-[YYLabel _getHighlightAtPoint:range:]
+-[YYLabel _showHighlightAnimated:]
+___34-[YYLabel _showHighlightAnimated:]_block_invoke
+___copy_helper_block_.94
+___destroy_helper_block_.95
+-[YYLabel _hideHighlightAnimated:]
+-[YYLabel _removeHighlightAnimated:]
+-[YYLabel _endTouch]
+-[YYLabel _convertPointToLayout:]
+-[YYLabel _convertPointFromLayout:]
+-[YYLabel _convertRectToLayout:]
+-[YYLabel _convertRectFromLayout:]
+-[YYLabel _defaultFont]
+-[YYLabel _shadowFromProperties]
+-[YYLabel _updateOuterLineBreakMode]
+-[YYLabel _updateOuterTextProperties]
+-[YYLabel _updateOuterContainerProperties]
+-[YYLabel _clearContents]
+___25-[YYLabel _clearContents]_block_invoke
+-[YYLabel _initLabel]
+-[YYLabel initWithFrame:]
+-[YYLabel dealloc]
++[YYLabel layerClass]
+-[YYLabel setFrame:]
+-[YYLabel setBounds:]
+-[YYLabel sizeThatFits:]
+-[YYLabel accessibilityLabel]
+-[YYLabel encodeWithCoder:]
+-[YYLabel initWithCoder:]
+-[YYLabel touchesBegan:withEvent:]
+-[YYLabel touchesMoved:withEvent:]
+-[YYLabel touchesEnded:withEvent:]
+-[YYLabel touchesCancelled:withEvent:]
+-[YYLabel setText:]
+-[YYLabel setFont:]
+-[YYLabel setTextColor:]
+-[YYLabel setShadowColor:]
+-[YYLabel setShadowOffset:]
+-[YYLabel setShadowBlurRadius:]
+-[YYLabel setTextAlignment:]
+-[YYLabel setLineBreakMode:]
+-[YYLabel setTextVerticalAlignment:]
+-[YYLabel setTruncationToken:]
+-[YYLabel setNumberOfLines:]
+-[YYLabel setAttributedText:]
+-[YYLabel setTextContainerPath:]
+-[YYLabel setExclusionPaths:]
+-[YYLabel setTextContainerInset:]
+-[YYLabel setVerticalForm:]
+-[YYLabel setLinePositionModifier:]
+-[YYLabel setTextParser:]
+-[YYLabel setTextLayout:]
+-[YYLabel textLayout]
+-[YYLabel setDisplaysAsynchronously:]
+-[YYLabel setPreferredMaxLayoutWidth:]
+-[YYLabel intrinsicContentSize]
+-[YYLabel setDebugOption:]
+-[YYLabel newAsyncDisplayTask]
+___30-[YYLabel newAsyncDisplayTask]_block_invoke
+___copy_helper_block_.324
+___destroy_helper_block_.325
+___30-[YYLabel newAsyncDisplayTask]_block_invoke.330
+___copy_helper_block_.333
+___destroy_helper_block_.334
+___30-[YYLabel newAsyncDisplayTask]_block_invoke.339
+___copy_helper_block_.364
+___destroy_helper_block_.365
+-[YYLabel text]
+-[YYLabel font]
+-[YYLabel textColor]
+-[YYLabel shadowColor]
+-[YYLabel shadowOffset]
+-[YYLabel shadowBlurRadius]
+-[YYLabel textAlignment]
+-[YYLabel textVerticalAlignment]
+-[YYLabel attributedText]
+-[YYLabel lineBreakMode]
+-[YYLabel truncationToken]
+-[YYLabel numberOfLines]
+-[YYLabel textParser]
+-[YYLabel textContainerPath]
+-[YYLabel exclusionPaths]
+-[YYLabel textContainerInset]
+-[YYLabel isVerticalForm]
+-[YYLabel linePositionModifier]
+-[YYLabel debugOption]
+-[YYLabel preferredMaxLayoutWidth]
+-[YYLabel textTapAction]
+-[YYLabel setTextTapAction:]
+-[YYLabel textLongPressAction]
+-[YYLabel setTextLongPressAction:]
+-[YYLabel highlightTapAction]
+-[YYLabel setHighlightTapAction:]
+-[YYLabel highlightLongPressAction]
+-[YYLabel setHighlightLongPressAction:]
+-[YYLabel displaysAsynchronously]
+-[YYLabel clearContentsBeforeAsynchronouslyDisplay]
+-[YYLabel setClearContentsBeforeAsynchronouslyDisplay:]
+-[YYLabel fadeOnAsynchronouslyDisplay]
+-[YYLabel setFadeOnAsynchronouslyDisplay:]
+-[YYLabel fadeOnHighlight]
+-[YYLabel setFadeOnHighlight:]
+-[YYLabel ignoreCommonProperties]
+-[YYLabel setIgnoreCommonProperties:]
+-[YYLabel .cxx_destruct]
+-[YYLabel(IBInspectableProperties) fontIsBold_:]
+-[YYLabel(IBInspectableProperties) boldFont_:]
+-[YYLabel(IBInspectableProperties) normalFont_:]
+-[YYLabel(IBInspectableProperties) setFontName_:]
+-[YYLabel(IBInspectableProperties) setFontSize_:]
+-[YYLabel(IBInspectableProperties) setFontIsBold_:]
+-[YYLabel(IBInspectableProperties) setInsetTop_:]
+-[YYLabel(IBInspectableProperties) setInsetBottom_:]
+-[YYLabel(IBInspectableProperties) setInsetLeft_:]
+-[YYLabel(IBInspectableProperties) setInsetRight_:]
+-[YYLabel(IBInspectableProperties) setDebugEnabled_:]
+_OBJC_IVAR_$_YYLabel._state
+_OBJC_IVAR_$_YYLabel._innerContainer
+_OBJC_IVAR_$_YYLabel._innerText
+_OBJC_IVAR_$_YYLabel._innerLayout
+_OBJC_IVAR_$_YYLabel._shrinkInnerLayout
+___block_descriptor_tmp.24
+_OBJC_IVAR_$_YYLabel._shrinkHighlightLayout
+_OBJC_IVAR_$_YYLabel._highlightLayout
+_OBJC_IVAR_$_YYLabel._longPressTimer
+_OBJC_IVAR_$_YYLabel._textLongPressAction
+_OBJC_IVAR_$_YYLabel._touchBeganPoint
+_OBJC_IVAR_$_YYLabel._highlight
+_OBJC_IVAR_$_YYLabel._highlightLongPressAction
+_OBJC_IVAR_$_YYLabel._highlightRange
+_OBJC_IVAR_$_YYLabel._textVerticalAlignment
+_OBJC_IVAR_$_YYLabel._shadowColor
+_OBJC_IVAR_$_YYLabel._shadowBlurRadius
+_OBJC_IVAR_$_YYLabel._shadowOffset
+_OBJC_IVAR_$_YYLabel._lineBreakMode
+_OBJC_IVAR_$_YYLabel._text
+_OBJC_IVAR_$_YYLabel._font
+_OBJC_IVAR_$_YYLabel._textColor
+_OBJC_IVAR_$_YYLabel._textAlignment
+_OBJC_IVAR_$_YYLabel._attributedText
+_OBJC_IVAR_$_YYLabel._truncationToken
+_OBJC_IVAR_$_YYLabel._numberOfLines
+_OBJC_IVAR_$_YYLabel._textContainerPath
+_OBJC_IVAR_$_YYLabel._exclusionPaths
+_OBJC_IVAR_$_YYLabel._textContainerInset
+_OBJC_IVAR_$_YYLabel._verticalForm
+_OBJC_IVAR_$_YYLabel._linePositionModifier
+_OBJC_IVAR_$_YYLabel._attachmentViews
+_OBJC_IVAR_$_YYLabel._attachmentLayers
+_OBJC_IVAR_$_YYLabel._debugOption
+_OBJC_IVAR_$_YYLabel._clearContentsBeforeAsynchronouslyDisplay
+_OBJC_IVAR_$_YYLabel._fadeOnAsynchronouslyDisplay
+_OBJC_IVAR_$_YYLabel._fadeOnHighlight
+_OBJC_IVAR_$_YYLabel._ignoreCommonProperties
+_OBJC_IVAR_$_YYLabel._displaysAsynchronously
+_OBJC_IVAR_$_YYLabel._textTapAction
+_OBJC_IVAR_$_YYLabel._highlightTapAction
+_OBJC_IVAR_$_YYLabel._textParser
+_OBJC_IVAR_$_YYLabel._preferredMaxLayoutWidth
+___block_descriptor_tmp.327
+___block_descriptor_tmp.336
+___block_descriptor_tmp.367
+l_OBJC_PROTOCOL_$_YYTextDebugTarget
+l_OBJC_LABEL_PROTOCOL_$_YYTextDebugTarget
+l_OBJC_PROTOCOL_$_YYTextAsyncLayerDelegate
+l_OBJC_LABEL_PROTOCOL_$_YYTextAsyncLayerDelegate
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/YYLabel.m
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/YYLabel.h
+__30-[YYLabel newAsyncDisplayTask]_block_invoke.339
+__30-[YYLabel newAsyncDisplayTask]_block_invoke.330
+__30-[YYLabel newAsyncDisplayTask]_block_invoke
+UIEdgeInsetsEqualToEdgeInsets
+__25-[YYLabel _clearContents]_block_invoke
+YYLabelGetReleaseQueue
+__34-[YYLabel _showHighlightAnimated:]_block_invoke
+__28-[YYLabel _clearInnerLayout]_block_invoke_2
+__28-[YYLabel _clearInnerLayout]_block_invoke
+-[UIView(YYText) yy_viewController]
+-[UIView(YYText) yy_visibleAlpha]
+-[UIView(YYText) yy_convertPoint:toViewOrWindow:]
+-[UIView(YYText) yy_convertPoint:fromViewOrWindow:]
+-[UIView(YYText) yy_convertRect:toViewOrWindow:]
+-[UIView(YYText) yy_convertRect:fromViewOrWindow:]
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Utility/UIView+YYText.m
++[_YYTextViewUndoObject objectWithText:range:]
+-[_YYTextViewUndoObject text]
+-[_YYTextViewUndoObject setText:]
+-[_YYTextViewUndoObject selectedRange]
+-[_YYTextViewUndoObject setSelectedRange:]
+-[_YYTextViewUndoObject .cxx_destruct]
+-[YYTextView _commitUpdate]
+-[YYTextView _updateIfNeeded]
+-[YYTextView _update]
+-[YYTextView _updateLayout]
+___27-[YYTextView _updateLayout]_block_invoke
+-[YYTextView _updateSelectionView]
+___34-[YYTextView _updateSelectionView]_block_invoke
+___34-[YYTextView _updateSelectionView]_block_invoke.133
+___copy_helper_block_.136
+___destroy_helper_block_.137
+-[YYTextView _updateInnerContainerSize]
+-[YYTextView _commitPlaceholderUpdate]
+-[YYTextView _updatePlaceholderIfNeeded]
+-[YYTextView _updatePlaceholder]
+-[YYTextView _updateTextRangeByTrackingCaret]
+-[YYTextView _updateTextRangeByTrackingGrabber]
+-[YYTextView _updateTextRangeByTrackingPreSelect]
+-[YYTextView _showMagnifierCaret]
+-[YYTextView _showMagnifierRanged]
+-[YYTextView _updateMagnifier]
+-[YYTextView _hideMagnifier]
+___28-[YYTextView _hideMagnifier]_block_invoke
+___copy_helper_block_.212
+___destroy_helper_block_.213
+-[YYTextView _showMenu]
+___23-[YYTextView _showMenu]_block_invoke
+___copy_helper_block_.245
+___destroy_helper_block_.246
+-[YYTextView _hideMenu]
+-[YYTextView _showHighlightAnimated:]
+___37-[YYTextView _showHighlightAnimated:]_block_invoke
+___copy_helper_block_.252
+___destroy_helper_block_.253
+-[YYTextView _hideHighlightAnimated:]
+-[YYTextView _removeHighlightAnimated:]
+-[YYTextView _scrollSelectedRangeToVisible]
+-[YYTextView _scrollRangeToVisible:]
+___36-[YYTextView _scrollRangeToVisible:]_block_invoke
+___copy_helper_block_.278
+___destroy_helper_block_.279
+___36-[YYTextView _scrollRangeToVisible:]_block_invoke.283
+___copy_helper_block_.286
+___destroy_helper_block_.287
+-[YYTextView _restoreInsetsAnimated:]
+___37-[YYTextView _restoreInsetsAnimated:]_block_invoke
+___copy_helper_block_.289
+___destroy_helper_block_.290
+-[YYTextView _keyboardChanged]
+___30-[YYTextView _keyboardChanged]_block_invoke
+___copy_helper_block_.296
+___destroy_helper_block_.297
+-[YYTextView _startLongPressTimer]
+-[YYTextView _endLongPressTimer]
+-[YYTextView _trackDidLongPress]
+-[YYTextView _startAutoScrollTimer]
+-[YYTextView _endAutoScrollTimer]
+-[YYTextView _trackDidTickAutoScroll]
+___37-[YYTextView _trackDidTickAutoScroll]_block_invoke
+___copy_helper_block_.356
+___destroy_helper_block_.357
+___37-[YYTextView _trackDidTickAutoScroll]_block_invoke.359
+-[YYTextView _endTouchTracking]
+-[YYTextView _startSelectionDotFixTimer]
+-[YYTextView _endSelectionDotFixTimer]
+-[YYTextView _fixSelectionDot]
+-[YYTextView _getClosestTokenRangeAtPosition:]
+-[YYTextView _getClosestTokenRangeAtPoint:]
+-[YYTextView _getHighlightAtPoint:range:]
+-[YYTextView _getMagnifierRangedOffset]
+-[YYTextView _getMoveDirection]
+-[YYTextView _getAutoscrollOffset]
+-[YYTextView _getVisibleSize]
+-[YYTextView _isPasteboardContainsValidValue]
+-[YYTextView _copySelectedTextToPasteboard]
+-[YYTextView _pasteboardChanged]
+-[YYTextView _isTextPositionValid:]
+-[YYTextView _isTextRangeValid:]
+-[YYTextView _correctedTextPosition:]
+-[YYTextView _correctedTextRange:]
+-[YYTextView _convertPointToLayout:]
+-[YYTextView _convertPointFromLayout:]
+-[YYTextView _convertRectToLayout:]
+-[YYTextView _convertRectFromLayout:]
+-[YYTextView _replaceRange:withText:notifyToDelegate:]
+-[YYTextView _updateAttributesHolder]
+-[YYTextView _updateOuterProperties]
+-[YYTextView _parseText]
+-[YYTextView _shouldDetectText]
+-[YYTextView _detectText:]
+___26-[YYTextView _detectText:]_block_invoke
+___26-[YYTextView _detectText:]_block_invoke_2
+___copy_helper_block_.506
+___destroy_helper_block_.507
+-[YYTextView _getRootViewController]
+-[YYTextView _resetUndoAndRedoStack]
+-[YYTextView _resetRedoStack]
+-[YYTextView _saveToUndoStack]
+-[YYTextView _saveToRedoStack]
+-[YYTextView _canUndo]
+-[YYTextView _canRedo]
+-[YYTextView _undo]
+-[YYTextView _redo]
+-[YYTextView _restoreFirstResponderAfterUndoAlert]
+-[YYTextView _showUndoRedoAlert]
+___32-[YYTextView _showUndoRedoAlert]_block_invoke
+___copy_helper_block_.570
+___destroy_helper_block_.571
+___32-[YYTextView _showUndoRedoAlert]_block_invoke.578
+___copy_helper_block_.581
+___destroy_helper_block_.582
+___32-[YYTextView _showUndoRedoAlert]_block_invoke.584
+___copy_helper_block_.585
+___destroy_helper_block_.586
+___32-[YYTextView _showUndoRedoAlert]_block_invoke.597
+___copy_helper_block_.598
+___destroy_helper_block_.599
+___32-[YYTextView _showUndoRedoAlert]_block_invoke.601
+___copy_helper_block_.602
+___destroy_helper_block_.603
+___32-[YYTextView _showUndoRedoAlert]_block_invoke.605
+___copy_helper_block_.606
+___destroy_helper_block_.607
+___32-[YYTextView _showUndoRedoAlert]_block_invoke.609
+___copy_helper_block_.610
+___destroy_helper_block_.611
+-[YYTextView _localizedUndoStrings]
+___35-[YYTextView _localizedUndoStrings]_block_invoke
+-[YYTextView _defaultFont]
+-[YYTextView _defaultTintColor]
+-[YYTextView _defaultPlaceholderColor]
+-[YYTextView _setText:]
+-[YYTextView _setFont:]
+-[YYTextView _setTextColor:]
+-[YYTextView _setTextAlignment:]
+-[YYTextView _setDataDetectorTypes:]
+-[YYTextView _setLinkTextAttributes:]
+-[YYTextView _setHighlightTextAttributes:]
+-[YYTextView _setTextParser:]
+-[YYTextView _setAttributedText:]
+-[YYTextView _setTextContainerInset:]
+-[YYTextView _setExclusionPaths:]
+-[YYTextView _setVerticalForm:]
+-[YYTextView _setLinePositionModifier:]
+-[YYTextView _setSelectedRange:]
+-[YYTextView _setTypingAttributes:]
+-[YYTextView _initTextView]
+-[YYTextView initWithFrame:]
+-[YYTextView dealloc]
+-[YYTextView scrollRangeToVisible:]
+-[YYTextView setText:]
+-[YYTextView setFont:]
+-[YYTextView setTextColor:]
+-[YYTextView setTextAlignment:]
+-[YYTextView setDataDetectorTypes:]
+-[YYTextView setLinkTextAttributes:]
+-[YYTextView setHighlightTextAttributes:]
+-[YYTextView setTextParser:]
+-[YYTextView setTypingAttributes:]
+___34-[YYTextView setTypingAttributes:]_block_invoke
+___copy_helper_block_.1160
+___destroy_helper_block_.1161
+-[YYTextView setAttributedText:]
+-[YYTextView setTextVerticalAlignment:]
+-[YYTextView setTextContainerInset:]
+-[YYTextView setExclusionPaths:]
+___32-[YYTextView setExclusionPaths:]_block_invoke
+-[YYTextView setVerticalForm:]
+___30-[YYTextView setVerticalForm:]_block_invoke
+-[YYTextView setLinePositionModifier:]
+-[YYTextView setSelectedRange:]
+-[YYTextView setHighlightable:]
+-[YYTextView setEditable:]
+-[YYTextView setSelectable:]
+-[YYTextView setClearsOnInsertion:]
+-[YYTextView setDebugOption:]
+-[YYTextView debugOption]
+-[YYTextView textLayout]
+-[YYTextView setPlaceholderText:]
+-[YYTextView setPlaceholderFont:]
+-[YYTextView setPlaceholderTextColor:]
+-[YYTextView setPlaceholderAttributedText:]
+-[YYTextView setMultipleTouchEnabled:]
+-[YYTextView setContentInset:]
+-[YYTextView setScrollIndicatorInsets:]
+-[YYTextView setFrame:]
+-[YYTextView setBounds:]
+-[YYTextView tintColorDidChange]
+-[YYTextView sizeThatFits:]
+-[YYTextView touchesBegan:withEvent:]
+-[YYTextView touchesMoved:withEvent:]
+-[YYTextView touchesEnded:withEvent:]
+-[YYTextView touchesCancelled:withEvent:]
+-[YYTextView motionEnded:withEvent:]
+-[YYTextView canBecomeFirstResponder]
+-[YYTextView becomeFirstResponder]
+-[YYTextView canResignFirstResponder]
+-[YYTextView resignFirstResponder]
+-[YYTextView canPerformAction:withSender:]
+-[YYTextView reloadInputViews]
+-[YYTextView cut:]
+-[YYTextView copy:]
+-[YYTextView paste:]
+-[YYTextView select:]
+-[YYTextView selectAll:]
+-[YYTextView _define:]
+___22-[YYTextView _define:]_block_invoke
++[YYTextView automaticallyNotifiesObserversForKey:]
+___51+[YYTextView automaticallyNotifiesObserversForKey:]_block_invoke
+-[YYTextView initWithCoder:]
+-[YYTextView encodeWithCoder:]
+-[YYTextView delegate]
+-[YYTextView setDelegate:]
+-[YYTextView scrollViewDidScroll:]
+-[YYTextView scrollViewDidZoom:]
+-[YYTextView scrollViewWillBeginDragging:]
+-[YYTextView scrollViewWillEndDragging:withVelocity:targetContentOffset:]
+-[YYTextView scrollViewDidEndDragging:willDecelerate:]
+-[YYTextView scrollViewWillBeginDecelerating:]
+-[YYTextView scrollViewDidEndDecelerating:]
+-[YYTextView scrollViewDidEndScrollingAnimation:]
+-[YYTextView viewForZoomingInScrollView:]
+-[YYTextView scrollViewWillBeginZooming:withView:]
+-[YYTextView scrollViewDidEndZooming:withView:atScale:]
+-[YYTextView scrollViewShouldScrollToTop:]
+-[YYTextView scrollViewDidScrollToTop:]
+-[YYTextView keyboardChangedWithTransition:]
+-[YYTextView alertView:clickedButtonAtIndex:]
+-[YYTextView hasText]
+-[YYTextView insertText:]
+-[YYTextView deleteBackward]
+-[YYTextView setInputDelegate:]
+-[YYTextView setSelectedTextRange:]
+-[YYTextView setMarkedTextStyle:]
+-[YYTextView setMarkedText:selectedRange:]
+-[YYTextView unmarkText]
+-[YYTextView replaceRange:withText:]
+___36-[YYTextView replaceRange:withText:]_block_invoke
+___copy_helper_block_.1437
+___destroy_helper_block_.1438
+-[YYTextView setBaseWritingDirection:forRange:]
+-[YYTextView textInRange:]
+-[YYTextView baseWritingDirectionForPosition:inDirection:]
+-[YYTextView beginningOfDocument]
+-[YYTextView endOfDocument]
+-[YYTextView positionFromPosition:offset:]
+-[YYTextView positionFromPosition:inDirection:offset:]
+-[YYTextView textRangeFromPosition:toPosition:]
+-[YYTextView comparePosition:toPosition:]
+-[YYTextView offsetFromPosition:toPosition:]
+-[YYTextView positionWithinRange:farthestInDirection:]
+-[YYTextView characterRangeByExtendingPosition:inDirection:]
+-[YYTextView closestPositionToPoint:]
+-[YYTextView closestPositionToPoint:withinRange:]
+-[YYTextView characterRangeAtPoint:]
+-[YYTextView firstRectForRange:]
+-[YYTextView caretRectForPosition:]
+-[YYTextView selectionRectsForRange:]
+___37-[YYTextView selectionRectsForRange:]_block_invoke
+___copy_helper_block_.1448
+___destroy_helper_block_.1449
+-[YYTextView selectionAffinity]
+-[YYTextView setSelectionAffinity:]
+-[YYTextView textStylingAtPosition:inDirection:]
+-[YYTextView positionWithinRange:atCharacterOffset:]
+-[YYTextView characterOffsetOfPosition:withinRange:]
+-[YYTextView autocapitalizationType]
+-[YYTextView setAutocapitalizationType:]
+-[YYTextView autocorrectionType]
+-[YYTextView setAutocorrectionType:]
+-[YYTextView spellCheckingType]
+-[YYTextView setSpellCheckingType:]
+-[YYTextView keyboardType]
+-[YYTextView setKeyboardType:]
+-[YYTextView keyboardAppearance]
+-[YYTextView setKeyboardAppearance:]
+-[YYTextView returnKeyType]
+-[YYTextView setReturnKeyType:]
+-[YYTextView enablesReturnKeyAutomatically]
+-[YYTextView setEnablesReturnKeyAutomatically:]
+-[YYTextView isSecureTextEntry]
+-[YYTextView setSecureTextEntry:]
+-[YYTextView selectedTextRange]
+-[YYTextView markedTextRange]
+-[YYTextView markedTextStyle]
+-[YYTextView inputDelegate]
+-[YYTextView tokenizer]
+-[YYTextView text]
+-[YYTextView font]
+-[YYTextView textColor]
+-[YYTextView textAlignment]
+-[YYTextView textVerticalAlignment]
+-[YYTextView dataDetectorTypes]
+-[YYTextView linkTextAttributes]
+-[YYTextView highlightTextAttributes]
+-[YYTextView typingAttributes]
+-[YYTextView attributedText]
+-[YYTextView textParser]
+-[YYTextView placeholderText]
+-[YYTextView placeholderFont]
+-[YYTextView placeholderTextColor]
+-[YYTextView placeholderAttributedText]
+-[YYTextView textContainerInset]
+-[YYTextView exclusionPaths]
+-[YYTextView isVerticalForm]
+-[YYTextView linePositionModifier]
+-[YYTextView selectedRange]
+-[YYTextView clearsOnInsertion]
+-[YYTextView isSelectable]
+-[YYTextView isHighlightable]
+-[YYTextView isEditable]
+-[YYTextView allowsPasteImage]
+-[YYTextView setAllowsPasteImage:]
+-[YYTextView allowsPasteAttributedString]
+-[YYTextView setAllowsPasteAttributedString:]
+-[YYTextView allowsCopyAttributedString]
+-[YYTextView setAllowsCopyAttributedString:]
+-[YYTextView allowsUndoAndRedo]
+-[YYTextView setAllowsUndoAndRedo:]
+-[YYTextView maximumUndoLevel]
+-[YYTextView setMaximumUndoLevel:]
+-[YYTextView inputView]
+-[YYTextView setInputView:]
+-[YYTextView inputAccessoryView]
+-[YYTextView setInputAccessoryView:]
+-[YYTextView extraAccessoryViewHeight]
+-[YYTextView setExtraAccessoryViewHeight:]
+-[YYTextView .cxx_destruct]
+-[YYTextView(IBInspectableProperties) fontIsBold_:]
+-[YYTextView(IBInspectableProperties) boldFont_:]
+-[YYTextView(IBInspectableProperties) normalFont_:]
+-[YYTextView(IBInspectableProperties) setFontName_:]
+-[YYTextView(IBInspectableProperties) setFontSize_:]
+-[YYTextView(IBInspectableProperties) setFontIsBold_:]
+-[YYTextView(IBInspectableProperties) setPlaceholderFontName_:]
+-[YYTextView(IBInspectableProperties) setPlaceholderFontSize_:]
+-[YYTextView(IBInspectableProperties) setPlaceholderFontIsBold_:]
+-[YYTextView(IBInspectableProperties) setInsetTop_:]
+-[YYTextView(IBInspectableProperties) setInsetBottom_:]
+-[YYTextView(IBInspectableProperties) setInsetLeft_:]
+-[YYTextView(IBInspectableProperties) setInsetRight_:]
+-[YYTextView(IBInspectableProperties) setDebugEnabled_:]
+_OBJC_IVAR_$__YYTextViewUndoObject._text
+_OBJC_IVAR_$__YYTextViewUndoObject._selectedRange
+_OBJC_IVAR_$_YYTextView._state
+_OBJC_IVAR_$_YYTextView._innerText
+_OBJC_IVAR_$_YYTextView._placeHolderView
+_OBJC_IVAR_$_YYTextView._delectedText
+_OBJC_IVAR_$_YYTextView._typingAttributesHolder
+_OBJC_IVAR_$_YYTextView._selectedTextRange
+_OBJC_IVAR_$_YYTextView._innerContainer
+_OBJC_IVAR_$_YYTextView._innerLayout
+_OBJC_IVAR_$_YYTextView._containerView
+_OBJC_IVAR_$_YYTextView._selectionView
+_OBJC_IVAR_$_YYTextView._trackingRange
+_OBJC_IVAR_$_YYTextView._markedTextRange
+___block_descriptor_tmp.130
+___block_descriptor_tmp.139
+_OBJC_IVAR_$_YYTextView._placeholderAttributedText
+_OBJC_IVAR_$_YYTextView._trackingPoint
+_OBJC_IVAR_$_YYTextView._magnifierRanged
+_OBJC_IVAR_$_YYTextView._magnifierCaret
+_OBJC_IVAR_$_YYTextView._verticalForm
+_OBJC_IVAR_$_YYTextView._magnifierRangedOffset
+___block_descriptor_tmp.214
+___block_descriptor_tmp.247
+_OBJC_IVAR_$_YYTextView._highlight
+_OBJC_IVAR_$_YYTextView._highlightLayout
+_OBJC_IVAR_$_YYTextView._highlightRange
+___block_descriptor_tmp.254
+_OBJC_IVAR_$_YYTextView._extraAccessoryViewHeight
+_OBJC_IVAR_$_YYTextView._insetModifiedByKeyboard
+_OBJC_IVAR_$_YYTextView._originalContentInset
+_OBJC_IVAR_$_YYTextView._originalScrollIndicatorInsets
+___block_descriptor_tmp.280
+___block_descriptor_tmp.288
+___block_descriptor_tmp.291
+___block_descriptor_tmp.298
+_OBJC_IVAR_$_YYTextView._longPressTimer
+_OBJC_IVAR_$_YYTextView._autoScrollTimer
+_OBJC_IVAR_$_YYTextView._autoScrollOffset
+_OBJC_IVAR_$_YYTextView._autoScrollAcceleration
+___block_descriptor_tmp.358
+_OBJC_IVAR_$_YYTextView._selectionDotFixTimer
+_OBJC_IVAR_$_YYTextView._previousOriginInWindow
+_OBJC_IVAR_$_YYTextView._tokenizer
+_OBJC_IVAR_$_YYTextView._highlightable
+_OBJC_IVAR_$_YYTextView._touchBeganPoint
+_OBJC_IVAR_$_YYTextView._allowsPasteAttributedString
+_OBJC_IVAR_$_YYTextView._allowsPasteImage
+_OBJC_IVAR_$_YYTextView._allowsCopyAttributedString
+_OBJC_IVAR_$_YYTextView._textVerticalAlignment
+_OBJC_IVAR_$_YYTextView._inputDelegate
+_OBJC_IVAR_$_YYTextView._dataDetector
+_OBJC_IVAR_$_YYTextView._linkTextAttributes
+_OBJC_IVAR_$_YYTextView._highlightTextAttributes
+___block_descriptor_tmp.513
+_OBJC_IVAR_$_YYTextView._undoStack
+_OBJC_IVAR_$_YYTextView._redoStack
+_OBJC_IVAR_$_YYTextView._lastTypeRange
+_OBJC_IVAR_$_YYTextView._allowsUndoAndRedo
+_OBJC_IVAR_$_YYTextView._maximumUndoLevel
+___block_descriptor_tmp.573
+___block_descriptor_tmp.587
+___block_descriptor_tmp.604
+___block_descriptor_tmp.608
+___block_descriptor_tmp.612
+__localizedUndoStrings.strings
+__localizedUndoStrings.onceToken
+___block_descriptor_tmp.1013
+_OBJC_IVAR_$_YYTextView._text
+_OBJC_IVAR_$_YYTextView._font
+_OBJC_IVAR_$_YYTextView._textColor
+_OBJC_IVAR_$_YYTextView._textAlignment
+_OBJC_IVAR_$_YYTextView._dataDetectorTypes
+_OBJC_IVAR_$_YYTextView._textParser
+_OBJC_IVAR_$_YYTextView._attributedText
+_OBJC_IVAR_$_YYTextView._textContainerInset
+_OBJC_IVAR_$_YYTextView._exclusionPaths
+_OBJC_IVAR_$_YYTextView._linePositionModifier
+_OBJC_IVAR_$_YYTextView._selectedRange
+_OBJC_IVAR_$_YYTextView._typingAttributes
+_OBJC_IVAR_$_YYTextView._autocapitalizationType
+_OBJC_IVAR_$_YYTextView._autocorrectionType
+_OBJC_IVAR_$_YYTextView._spellCheckingType
+_OBJC_IVAR_$_YYTextView._keyboardType
+_OBJC_IVAR_$_YYTextView._keyboardAppearance
+_OBJC_IVAR_$_YYTextView._returnKeyType
+_OBJC_IVAR_$_YYTextView._enablesReturnKeyAutomatically
+_OBJC_IVAR_$_YYTextView._secureTextEntry
+_OBJC_IVAR_$_YYTextView._markedTextStyle
+_OBJC_IVAR_$_YYTextView._editable
+_OBJC_IVAR_$_YYTextView._selectable
+___block_descriptor_tmp.1162
+___block_descriptor_tmp.1189
+___block_descriptor_tmp.1197
+_OBJC_IVAR_$_YYTextView._clearsOnInsertion
+_OBJC_IVAR_$_YYTextView._placeholderFont
+_OBJC_IVAR_$_YYTextView._placeholderTextColor
+_OBJC_IVAR_$_YYTextView._placeholderText
+_OBJC_IVAR_$_YYTextView._trackingTime
+_OBJC_IVAR_$_YYTextView._touchBeganTime
+___block_descriptor_tmp.1352
+___block_literal_global.1353
+_automaticallyNotifiesObserversForKey:.keys
+_automaticallyNotifiesObserversForKey:.onceToken
+___block_descriptor_tmp.1357
+___block_literal_global.1358
+_OBJC_IVAR_$_YYTextView._outerDelegate
+___block_descriptor_tmp.1439
+___block_descriptor_tmp.1450
+_OBJC_IVAR_$_YYTextView._inputView
+_OBJC_IVAR_$_YYTextView._inputAccessoryView
+l_OBJC_PROTOCOL_$_UIScrollViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIScrollViewDelegate
+l_OBJC_PROTOCOL_$_UIAlertViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIAlertViewDelegate
+l_OBJC_PROTOCOL_$_YYTextKeyboardObserver
+l_OBJC_LABEL_PROTOCOL_$_YYTextKeyboardObserver
+l_OBJC_PROTOCOL_$_UITextInputTraits
+l_OBJC_LABEL_PROTOCOL_$_UITextInputTraits
+l_OBJC_PROTOCOL_$_UIKeyInput
+l_OBJC_LABEL_PROTOCOL_$_UIKeyInput
+l_OBJC_PROTOCOL_$_UITextInput
+l_OBJC_LABEL_PROTOCOL_$_UITextInput
+_OBJC_IVAR_$_YYTextView._selectionAffinity
+___block_descriptor_tmp.1980
+___block_literal_global.1981
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/YYTextView.m
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/YYTextView.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextInput.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextInputTraits.h
+__37-[YYTextView selectionRectsForRange:]_block_invoke
+__36-[YYTextView replaceRange:withText:]_block_invoke
+__51+[YYTextView automaticallyNotifiesObserversForKey:]_block_invoke
+__22-[YYTextView _define:]_block_invoke
+__30-[YYTextView setVerticalForm:]_block_invoke
+__32-[YYTextView setExclusionPaths:]_block_invoke
+__34-[YYTextView setTypingAttributes:]_block_invoke
+YYTextNSTextCheckingTypeFromUIDataDetectorType
+__35-[YYTextView _localizedUndoStrings]_block_invoke
+__32-[YYTextView _showUndoRedoAlert]_block_invoke.609
+__32-[YYTextView _showUndoRedoAlert]_block_invoke.605
+__32-[YYTextView _showUndoRedoAlert]_block_invoke.601
+__32-[YYTextView _showUndoRedoAlert]_block_invoke.597
+__32-[YYTextView _showUndoRedoAlert]_block_invoke.584
+__32-[YYTextView _showUndoRedoAlert]_block_invoke.578
+__32-[YYTextView _showUndoRedoAlert]_block_invoke
+__26-[YYTextView _detectText:]_block_invoke_2
+__26-[YYTextView _detectText:]_block_invoke
+__CGPointEqualToPoint
+__37-[YYTextView _trackDidTickAutoScroll]_block_invoke.359
+__37-[YYTextView _trackDidTickAutoScroll]_block_invoke
+__30-[YYTextView _keyboardChanged]_block_invoke
+__37-[YYTextView _restoreInsetsAnimated:]_block_invoke
+__36-[YYTextView _scrollRangeToVisible:]_block_invoke.283
+__36-[YYTextView _scrollRangeToVisible:]_block_invoke
+__37-[YYTextView _showHighlightAnimated:]_block_invoke
+__23-[YYTextView _showMenu]_block_invoke
+__28-[YYTextView _hideMagnifier]_block_invoke
+__34-[YYTextView _updateSelectionView]_block_invoke.133
+__34-[YYTextView _updateSelectionView]_block_invoke
+__27-[YYTextView _updateLayout]_block_invoke
+-[_YYTextKeyboardViewFrameObserver addToKeyboardView:]
+-[_YYTextKeyboardViewFrameObserver removeFrameObserver]
+-[_YYTextKeyboardViewFrameObserver addFrameObserver]
+-[_YYTextKeyboardViewFrameObserver dealloc]
++[_YYTextKeyboardViewFrameObserver observerForView:]
+-[_YYTextKeyboardViewFrameObserver observeValueForKeyPath:ofObject:change:context:]
+-[_YYTextKeyboardViewFrameObserver notifyBlock]
+-[_YYTextKeyboardViewFrameObserver setNotifyBlock:]
+-[_YYTextKeyboardViewFrameObserver .cxx_destruct]
+-[YYTextKeyboardManager init]
+-[YYTextKeyboardManager _init]
+-[YYTextKeyboardManager _initFrameObserver]
+___43-[YYTextKeyboardManager _initFrameObserver]_block_invoke
+-[YYTextKeyboardManager dealloc]
++[YYTextKeyboardManager defaultManager]
+___39+[YYTextKeyboardManager defaultManager]_block_invoke
+___copy_helper_block_.86
+___destroy_helper_block_.87
++[YYTextKeyboardManager load]
+___29+[YYTextKeyboardManager load]_block_invoke
+___copy_helper_block_.93
+___destroy_helper_block_.94
+-[YYTextKeyboardManager addObserver:]
+-[YYTextKeyboardManager removeObserver:]
+-[YYTextKeyboardManager keyboardWindow]
+-[YYTextKeyboardManager keyboardView]
+-[YYTextKeyboardManager isKeyboardVisible]
+-[YYTextKeyboardManager keyboardFrame]
+-[YYTextKeyboardManager _systemVersion]
+___39-[YYTextKeyboardManager _systemVersion]_block_invoke
+-[YYTextKeyboardManager _getKeyboardViewFromWindow:]
+-[YYTextKeyboardManager _keyboardFrameWillChangeNotification:]
+-[YYTextKeyboardManager _keyboardFrameDidChangeNotification:]
+-[YYTextKeyboardManager _keyboardFrameChanged:]
+-[YYTextKeyboardManager _notifyAllObservers]
+-[YYTextKeyboardManager convertRect:toView:]
+-[YYTextKeyboardManager .cxx_destruct]
+_OBJC_IVAR_$__YYTextKeyboardViewFrameObserver._keyboardView
+__YYTextKeyboardViewFrameObserverKey
+_OBJC_IVAR_$__YYTextKeyboardViewFrameObserver._notifyBlock
+_OBJC_IVAR_$_YYTextKeyboardManager._observers
+_defaultManager.mgr
+_defaultManager.onceToken
+___block_descriptor_tmp.90
+___block_descriptor_tmp.96
+__systemVersion.v
+__systemVersion.onceToken
+___block_descriptor_tmp.142
+_OBJC_IVAR_$_YYTextKeyboardManager._notificationFromFrame
+_OBJC_IVAR_$_YYTextKeyboardManager._notificationToFrame
+_OBJC_IVAR_$_YYTextKeyboardManager._notificationCurve
+_OBJC_IVAR_$_YYTextKeyboardManager._notificationDuration
+_OBJC_IVAR_$_YYTextKeyboardManager._hasNotification
+_OBJC_IVAR_$_YYTextKeyboardManager._lastIsNotification
+_OBJC_IVAR_$_YYTextKeyboardManager._observedToFrame
+_OBJC_IVAR_$_YYTextKeyboardManager._hasObservedChange
+_OBJC_IVAR_$_YYTextKeyboardManager._fromFrame
+_OBJC_IVAR_$_YYTextKeyboardManager._fromVisible
+_OBJC_IVAR_$_YYTextKeyboardManager._fromOrientation
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Component/YYTextKeyboardManager.m
+__39-[YYTextKeyboardManager _systemVersion]_block_invoke
+__29+[YYTextKeyboardManager load]_block_invoke
+__39+[YYTextKeyboardManager defaultManager]_block_invoke
+__43-[YYTextKeyboardManager _initFrameObserver]_block_invoke
++[YYTextPosition positionWithOffset:]
++[YYTextPosition positionWithOffset:affinity:]
+-[YYTextPosition copyWithZone:]
+-[YYTextPosition description]
+-[YYTextPosition hash]
+-[YYTextPosition isEqual:]
+-[YYTextPosition compare:]
+-[YYTextPosition offset]
+-[YYTextPosition affinity]
+-[YYTextRange init]
+-[YYTextRange start]
+-[YYTextRange end]
+-[YYTextRange isEmpty]
+-[YYTextRange asRange]
++[YYTextRange rangeWithRange:]
++[YYTextRange rangeWithRange:affinity:]
++[YYTextRange rangeWithStart:end:]
++[YYTextRange defaultRange]
+-[YYTextRange copyWithZone:]
+-[YYTextRange description]
+-[YYTextRange hash]
+-[YYTextRange isEqual:]
+-[YYTextRange .cxx_destruct]
+-[YYTextSelectionRect copyWithZone:]
+-[YYTextSelectionRect rect]
+-[YYTextSelectionRect setRect:]
+-[YYTextSelectionRect writingDirection]
+-[YYTextSelectionRect setWritingDirection:]
+-[YYTextSelectionRect containsStart]
+-[YYTextSelectionRect setContainsStart:]
+-[YYTextSelectionRect containsEnd]
+-[YYTextSelectionRect setContainsEnd:]
+-[YYTextSelectionRect isVertical]
+-[YYTextSelectionRect setIsVertical:]
+_OBJC_IVAR_$_YYTextPosition._offset
+_OBJC_IVAR_$_YYTextPosition._affinity
+_OBJC_IVAR_$_YYTextRange._start
+_OBJC_IVAR_$_YYTextRange._end
+_OBJC_IVAR_$_YYTextSelectionRect._rect
+_OBJC_IVAR_$_YYTextSelectionRect._writingDirection
+_OBJC_IVAR_$_YYTextSelectionRect._containsStart
+_OBJC_IVAR_$_YYTextSelectionRect._containsEnd
+_OBJC_IVAR_$_YYTextSelectionRect._isVertical
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Component/YYTextInput.m
+/Users/elland/Documents/bb/token-ios-client/Carthage/Checkouts/YYText/YYText/Component/YYTextInput.h
+_OSSwapInt64
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/include/libkern/arm/OSByteOrder.h
+/Users/elland/Library/Caches/org.carthage.CarthageKit/DerivedData/YYText/02eba9ffd392892a2fca5ed98f6628d29003ef78/Build/Intermediates/YYText.build/Release-iphoneos/YYText.build/DerivedSources/YYText_vers.c
+__ZL15__ARCLite__loadv
+__ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
+__ZL22add_image_hook_swiftV1PK11mach_headerl
+__ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
+__ZL13replaceMethodP10objc_classP13objc_selectorPFP11objc_objectS4_S2_zEPS6_
+__ZL30__arclite_NSManagedObject_initP11objc_objectP13objc_selector
+__ZL41__arclite_NSManagedObject_allocWithEntityP11objc_objectP13objc_selectorS0_
+__ZL36__arclite_NSManagedObject_allocBatchP11objc_objectP13objc_selectorPS0_S0_j
+__ZL37__arclite_NSKKMS_fastIndexForKnownKeyP11objc_objectP13objc_selectorS0_
+__ZL28__arclite_NSKKMS_indexForKeyP11objc_objectP13objc_selectorS0_
+__ZL29__arclite_NSKKsD_objectForKeyP11objc_objectP13objc_selectorS0_
+__ZL35__arclite_NSKKsD_removeObjectForKeyP11objc_objectP13objc_selectorS0_
+__ZL33__arclite_NSKKsD_setObject_forKeyP11objc_objectP13objc_selectorS0_S0_
+__ZL41__arclite_NSKKsD_addEntriesFromDictionaryP11objc_objectP13objc_selectorP12NSDictionary
+__ZL28__arclite_objc_readClassPairP10objc_classPK15objc_image_info
+__ZL32__arclite_objc_allocateClassPairP10objc_classPKcm
+__ZL32__arclite_object_getIndexedIvarsP11objc_object
+__ZL23__arclite_objc_getClassPKc
+__ZL27__arclite_objc_getMetaClassPKc
+__ZL31__arclite_objc_getRequiredClassPKc
+__ZL26__arclite_objc_lookUpClassPKc
+__ZL26__arclite_objc_getProtocolPKc
+__ZL23__arclite_class_getNameP10objc_class
+__ZL26__arclite_protocol_getNameP8Protocol
+__ZL37__arclite_objc_copyClassNamesForImagePKcPj
+__ZL17transcribeMethodsP10objc_classP15glue_class_ro_t
+__ZL19transcribeProtocolsP10objc_classP15glue_class_ro_t
+__ZL20transcribePropertiesP10objc_classP15glue_class_ro_t
+__ZL14initialize_impP11objc_objectP13objc_selector
+__ZL18allocateMaybeSwiftP18glue_swift_class_tm
+__ZL22copySwiftV1MangledNamePKcb
+__ZL13demangledNamePKcb
+__ZL16scanMangledFieldRPKcS0_S1_Ri
+__ZL30arclite_uninitialized_functionv
+__ZL12cxxConstructP11objc_object
+__ZL20fixStringForCoreDataP11objc_object
+_OBJC_METACLASS_$___ARCLite__
+__ZL24OBJC_CLASS_$___ARCLite__
+__ZL31OBJC_METACLASS_RO_$___ARCLite__
+__non_lazy_classes
+__ZL27OBJC_CLASS_RO_$___ARCLite__
+__ZL11_class_name
+__ZL32OBJC_$_CLASS_METHODS___ARCLite__
+__ZL17_load_method_name
+__ZL17_load_method_type
+l_OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteKeyedSubscripting__
+__ZL30NSUndoManagerProxy_targetClass
+__ZL29original_NSManagedObject_init
+__ZL40original_NSManagedObject_allocWithEntity
+__ZL35original_NSManagedObject_allocBatch
+__ZL25NSMutableDictionary_class
+__ZL22NSConstantString_class
+__ZL14NSString_class
+__ZL36original_NSKKMS_fastIndexForKnownKey
+__ZL27original_NSKKMS_indexForKey
+__ZL28original_NSKKsD_objectForKey
+__ZL34original_NSKKsD_removeObjectForKey
+__ZL32original_NSKKsD_setObject_forKey
+__ZL40original_NSKKsD_addEntriesFromDictionary
+__ZZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZGVZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZL31original_objc_allocateClassPair
+__ZL31original_object_getIndexedIvars
+__ZL22original_objc_getClass
+__ZL26original_objc_getMetaClass
+__ZL30original_objc_getRequiredClass
+__ZL25original_objc_lookUpClass
+__ZL25original_objc_getProtocol
+__ZL22original_class_getName
+__ZL25original_protocol_getName
+__ZL36original_objc_copyClassNamesForImage
+__ZL12demangleLock
+__ZL9Demangled
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch arm64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-66~534/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-66~534/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-66~534/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-66~534/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-66~534/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-66~534/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-66~534/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-66~534/Symbols/BuiltProducts -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=incomplete-umbrella -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-66~534/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-66~534/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-66/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/arclite_iOS-66~534/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.o -mlinker-version=278.4
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-66/source/arclite.mm
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-66
+fixStringForCoreData
+cxxConstruct
+arclite_uninitialized_function
+scanMangledField
+isdigit
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.Internal.sdk/usr/include/ctype.h
+__isctype
+demangledName
+copySwiftV1DemangledName
+copySwiftV1MangledName
+allocateMaybeSwift
+word_align
+isSwift
+initialize_imp
+transcribeProperties
+property_list_nth
+transcribeProtocols
+transcribeMethods
+data
+method_list_nth
+__arclite_objc_copyClassNamesForImage
+__arclite_protocol_getName
+__arclite_class_getName
+__arclite_objc_getProtocol
+__arclite_objc_lookUpClass
+__arclite_objc_getRequiredClass
+__arclite_objc_getMetaClass
+__arclite_objc_getClass
+__arclite_object_getIndexedIvars
+__arclite_objc_allocateClassPair
+metaclass
+__arclite_objc_readClassPair
+transcribeIvars
+ivar_list_nth
+max
+alignment
+ro
+fastFlags
+__arclite_NSKKsD_addEntriesFromDictionary
+__arclite_NSKKsD_setObject_forKey
+__arclite_NSKKsD_removeObjectForKey
+__arclite_NSKKsD_objectForKey
+__arclite_NSKKMS_indexForKey
+__arclite_NSKKMS_fastIndexForKnownKey
+__arclite_NSManagedObject_allocBatch
+__arclite_NSManagedObject_allocWithEntity
+__arclite_NSManagedObject_init
+replaceMethod
+__arclite_NSUndoManagerProxy_isKindOfClass
+add_image_hook_swiftV1
+patch_lazy_pointers
+patch_t<const char **(const char *, unsigned int *)>
+patch_t<const char *(Protocol *)>
+patch_t<const char *(Class)>
+patch_t<Protocol *(const char *)>
+patch_t<Class (const char *)>
+patch_t<void *(id)>
+patch_t<Class (Class, const char *, unsigned long)>
+patch_t<Class (Class, const objc_image_info *)>
+__arclite_NSMutableDictionary__setObject_forKeyedSubscript
+__ARCLite__load
+install_swiftV1
+install_dict_nil_value
+addOrReplaceMethod
+keyedGetter

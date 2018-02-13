@@ -1,0 +1,177 @@
+PODS:
+  - 25519 (2.0.2)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AxolotlKit (0.8.1):
+    - 25519 (~> 2.0.1)
+    - CocoaLumberjack
+    - HKDFKit (~> 0.0.3)
+    - ProtocolBuffers (~> 1.9.8)
+  - CocoaLumberjack (3.3.0):
+    - CocoaLumberjack/Default (= 3.3.0)
+    - CocoaLumberjack/Extensions (= 3.3.0)
+  - CocoaLumberjack/Default (3.3.0)
+  - CocoaLumberjack/Extensions (3.3.0):
+    - CocoaLumberjack/Default
+  - Crashlytics (3.9.3):
+    - Fabric (~> 1.7.2)
+  - Fabric (1.7.2)
+  - HKDFKit (0.0.3)
+  - libPhoneNumber-iOS (0.9.13)
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
+  - OpenSSL (1.0.210)
+  - ProtocolBuffers (1.9.11)
+  - Reachability (3.2)
+  - SAMKeychain (1.5.3)
+  - SignalServiceKit (0.9.0):
+    - 25519
+    - AFNetworking
+    - AxolotlKit
+    - CocoaLumberjack
+    - libPhoneNumber-iOS
+    - Mantle
+    - OpenSSL
+    - Reachability
+    - SAMKeychain
+    - SocketRocket
+    - TwistedOakCollapsingFutures
+    - YapDatabase/SQLCipher (~> 3.0.2)
+  - SocketRocket (0.5.1)
+  - SQLCipher (3.4.1):
+    - SQLCipher/standard (= 3.4.1)
+  - SQLCipher/common (3.4.1)
+  - SQLCipher/standard (3.4.1):
+    - SQLCipher/common
+  - SwiftLint (0.24.0)
+  - TwistedOakCollapsingFutures (1.0.0):
+    - UnionFind (~> 1.0)
+  - UnionFind (1.0.1)
+  - YapDatabase/SQLCipher (3.0.2):
+    - YapDatabase/SQLCipher/Core (= 3.0.2)
+    - YapDatabase/SQLCipher/Extensions (= 3.0.2)
+  - YapDatabase/SQLCipher/Core (3.0.2):
+    - CocoaLumberjack
+    - SQLCipher (>= 3.4.0)
+  - YapDatabase/SQLCipher/Extensions (3.0.2):
+    - YapDatabase/SQLCipher/Core
+    - YapDatabase/SQLCipher/Extensions/ActionManager (= 3.0.2)
+    - YapDatabase/SQLCipher/Extensions/AutoView (= 3.0.2)
+    - YapDatabase/SQLCipher/Extensions/CloudCore (= 3.0.2)
+    - YapDatabase/SQLCipher/Extensions/CloudKit (= 3.0.2)
+    - YapDatabase/SQLCipher/Extensions/ConnectionProxy (= 3.0.2)
+    - YapDatabase/SQLCipher/Extensions/CrossProcessNotification (= 3.0.2)
+    - YapDatabase/SQLCipher/Extensions/FilteredView (= 3.0.2)
+    - YapDatabase/SQLCipher/Extensions/FullTextSearch (= 3.0.2)
+    - YapDatabase/SQLCipher/Extensions/Hooks (= 3.0.2)
+    - YapDatabase/SQLCipher/Extensions/ManualView (= 3.0.2)
+    - YapDatabase/SQLCipher/Extensions/Relationships (= 3.0.2)
+    - YapDatabase/SQLCipher/Extensions/RTreeIndex (= 3.0.2)
+    - YapDatabase/SQLCipher/Extensions/SearchResultsView (= 3.0.2)
+    - YapDatabase/SQLCipher/Extensions/SecondaryIndex (= 3.0.2)
+    - YapDatabase/SQLCipher/Extensions/View (= 3.0.2)
+  - YapDatabase/SQLCipher/Extensions/ActionManager (3.0.2):
+    - YapDatabase/SQLCipher/Core
+    - YapDatabase/SQLCipher/Extensions/AutoView
+  - YapDatabase/SQLCipher/Extensions/AutoView (3.0.2):
+    - YapDatabase/SQLCipher/Core
+    - YapDatabase/SQLCipher/Extensions/View
+  - YapDatabase/SQLCipher/Extensions/CloudCore (3.0.2):
+    - YapDatabase/SQLCipher/Core
+  - YapDatabase/SQLCipher/Extensions/CloudKit (3.0.2):
+    - YapDatabase/SQLCipher/Core
+  - YapDatabase/SQLCipher/Extensions/ConnectionProxy (3.0.2):
+    - YapDatabase/SQLCipher/Core
+  - YapDatabase/SQLCipher/Extensions/CrossProcessNotification (3.0.2):
+    - YapDatabase/SQLCipher/Core
+  - YapDatabase/SQLCipher/Extensions/FilteredView (3.0.2):
+    - YapDatabase/SQLCipher/Core
+    - YapDatabase/SQLCipher/Extensions/View
+  - YapDatabase/SQLCipher/Extensions/FullTextSearch (3.0.2):
+    - YapDatabase/SQLCipher/Core
+  - YapDatabase/SQLCipher/Extensions/Hooks (3.0.2):
+    - YapDatabase/SQLCipher/Core
+  - YapDatabase/SQLCipher/Extensions/ManualView (3.0.2):
+    - YapDatabase/SQLCipher/Core
+    - YapDatabase/SQLCipher/Extensions/View
+  - YapDatabase/SQLCipher/Extensions/Relationships (3.0.2):
+    - YapDatabase/SQLCipher/Core
+  - YapDatabase/SQLCipher/Extensions/RTreeIndex (3.0.2):
+    - YapDatabase/SQLCipher/Core
+  - YapDatabase/SQLCipher/Extensions/SearchResultsView (3.0.2):
+    - YapDatabase/SQLCipher/Core
+    - YapDatabase/SQLCipher/Extensions/AutoView
+    - YapDatabase/SQLCipher/Extensions/FullTextSearch
+  - YapDatabase/SQLCipher/Extensions/SecondaryIndex (3.0.2):
+    - YapDatabase/SQLCipher/Core
+  - YapDatabase/SQLCipher/Extensions/View (3.0.2):
+    - YapDatabase/SQLCipher/Core
+
+DEPENDENCIES:
+  - AxolotlKit (from `https://github.com/WhisperSystems/SignalProtocolKit.git`)
+  - CocoaLumberjack (~> 3.3.0)
+  - Crashlytics (~> 3.9.3)
+  - Fabric (~> 1.7.2)
+  - SignalServiceKit (from `https://github.com/toshiapp/Signal-iOS.git`, commit `910c2c02f251ac21caec77aa3e6d8102743beea7`)
+  - SocketRocket (from `https://github.com/facebook/SocketRocket.git`)
+  - SwiftLint (~> 0.24.0)
+
+EXTERNAL SOURCES:
+  AxolotlKit:
+    :git: https://github.com/WhisperSystems/SignalProtocolKit.git
+  SignalServiceKit:
+    :commit: 910c2c02f251ac21caec77aa3e6d8102743beea7
+    :git: https://github.com/toshiapp/Signal-iOS.git
+  SocketRocket:
+    :git: https://github.com/facebook/SocketRocket.git
+
+CHECKOUT OPTIONS:
+  AxolotlKit:
+    :commit: 6e9d5e8c3dc87e397b4b7485172507b0990a22dd
+    :git: https://github.com/WhisperSystems/SignalProtocolKit.git
+  SignalServiceKit:
+    :commit: 910c2c02f251ac21caec77aa3e6d8102743beea7
+    :git: https://github.com/toshiapp/Signal-iOS.git
+  SocketRocket:
+    :commit: 28035e1a98a427853e4038ff1b70479fa8374cfa
+    :git: https://github.com/facebook/SocketRocket.git
+
+SPEC CHECKSUMS:
+  25519: dc4bad7e2dbcbf1efa121068a705a44cd98c80fc
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AxolotlKit: ba0ab24b879d34559a68e1270b079cc9bd7b3417
+  CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
+  Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
+  Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
+  HKDFKit: c058305d6f64b84f28c50bd7aa89574625bcb62a
+  libPhoneNumber-iOS: e444379ac18bbfbdefad571da735b2cd7e096caa
+  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  OpenSSL: 246ffb948e9d56466727fd318134af35f5aa764e
+  ProtocolBuffers: d509225eb2ea43d9582a59e94348fcf86e2abd65
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SignalServiceKit: f7a52969f5bde1fefbd1aa9c84be1a022f76191a
+  SocketRocket: dbb1554b8fc288ef8ef370d6285aeca7361be31e
+  SQLCipher: 43d12c0eb9c57fb438749618fc3ce0065509a559
+  SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
+  TwistedOakCollapsingFutures: f359b90f203e9ab13dfb92c9ff41842a7fe1cd0c
+  UnionFind: c33be5adb12983981d6e827ea94fc7f9e370f52d
+  YapDatabase: 299a32de9d350d37a9ac5b0532609d87d5d2a5de
+
+PODFILE CHECKSUM: 42b5cd8ccf2db71a67759ef61fbdde5c34009cf6
+
+COCOAPODS: 1.3.1

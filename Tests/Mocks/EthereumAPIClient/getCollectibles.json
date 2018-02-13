@@ -1,0 +1,29 @@
+{
+    "collectibles": [
+                     {
+                     "name": "Cryptokitties",
+                     "value": "0x10",
+                     "contract_address": "0x0123456789012345678901234567890123456789",
+                     "icon": "https://www.cryptokitties.co/icons/logo.svg",
+                     "tokens": [{
+                                "token_id": "abcdef0123456",
+                                "name": "Kitten 423423",
+                                "image": "https://storage.googleapis.com/ck-kitty-image/0x06012c8cf97bead5deae237070f9587f8e7a266d/467583.svg",
+                                "description": "A kitten"
+                                }]
+                     },
+                     {
+                     "name": "Cryptokitties 1",
+                     "value": "0x11",
+                     "contract_address": "0x01234e6789012345678901234567890123456789",
+                     "icon": "https://www.cryptokitties.co/icons/logo.svg",
+                     "tokens": [{
+                                "token_id": "abcdef0123456",
+                                "name": "Kitten 423423",
+                                "image": "https://storage.googleapis.com/ck-kitty-image/0x06012c8cf97bead5deae237070f9587f8e7a266d/467583.svg",
+                                "description": "A kitten"
+                                }]
+                     }
+                     ]
+}
+

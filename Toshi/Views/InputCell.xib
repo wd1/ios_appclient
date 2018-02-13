@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="46" id="Jwf-E5-TBh" customClass="InputCell" customModule="Toshi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="46"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" tableViewCell="Jwf-E5-TBh" id="AmV-1d-vx7">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="45.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovj-LI-uKF">
+                        <rect key="frame" x="16" y="13" width="105" height="19.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="105" id="ydw-uO-C1d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L0K-YR-6qt">
+                        <rect key="frame" x="131" y="13" width="221" height="19.5"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    </textField>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pOp-zb-bRc">
+                        <rect key="frame" x="303" y="6.5" width="51" height="31"/>
+                        <connections>
+                            <action selector="switchValueDidChange:" destination="Jwf-E5-TBh" eventType="valueChanged" id="4Ja-1Y-tUt"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ovj-LI-uKF" secondAttribute="bottom" constant="13" id="6Xj-V7-a4C"/>
+                    <constraint firstAttribute="bottom" secondItem="L0K-YR-6qt" secondAttribute="bottom" constant="13" id="Bcm-gx-shJ"/>
+                    <constraint firstItem="ovj-LI-uKF" firstAttribute="top" secondItem="AmV-1d-vx7" secondAttribute="top" constant="13" id="I8S-Eg-2cX"/>
+                    <constraint firstItem="L0K-YR-6qt" firstAttribute="top" secondItem="AmV-1d-vx7" secondAttribute="top" constant="13" id="Jse-7B-zfk"/>
+                    <constraint firstItem="L0K-YR-6qt" firstAttribute="leading" secondItem="ovj-LI-uKF" secondAttribute="trailing" constant="10" id="NoQ-o4-0iU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pOp-zb-bRc" secondAttribute="trailing" id="XXy-3W-xkz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="L0K-YR-6qt" secondAttribute="trailing" id="kHh-6L-P9a"/>
+                    <constraint firstItem="ovj-LI-uKF" firstAttribute="leading" secondItem="AmV-1d-vx7" secondAttribute="leadingMargin" id="oq5-Sy-olY"/>
+                    <constraint firstItem="pOp-zb-bRc" firstAttribute="centerY" secondItem="AmV-1d-vx7" secondAttribute="centerY" id="r76-2l-bWb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="switchControl" destination="pOp-zb-bRc" id="gKi-EG-hso"/>
+                <outlet property="textField" destination="L0K-YR-6qt" id="zH2-ZO-jW8"/>
+                <outlet property="titleLabel" destination="ovj-LI-uKF" id="8dI-YD-y71"/>
+                <outlet property="titleWidthConstraint" destination="ydw-uO-C1d" id="YvG-Mq-6ee"/>
+            </connections>
+            <point key="canvasLocation" x="-343" y="-28"/>
+        </tableViewCell>
+    </objects>
+</document>

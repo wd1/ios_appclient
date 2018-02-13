@@ -1,0 +1,19 @@
+{
+  "currencies": [
+    {
+      "code": "AED",
+      "min_size": "0.01000000",
+      "name": "United Arab Emirates Dirham"
+    },
+    {
+      "code": "AFN",
+      "min_size": "0.01000000",
+      "name": "Afghan Afghani"
+    },
+    {
+      "code": "ALL",
+      "min_size": "0.01000000",
+      "name": "Albanian Lek"
+    }
+  ]
+}
